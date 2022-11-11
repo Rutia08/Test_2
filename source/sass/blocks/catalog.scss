@@ -1,0 +1,214 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.catalog__item {
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  min-height: 386px;
+  background-color: $color-maya-blue;
+
+  &--astoria,
+  &--eline {
+    background-image:
+      image-set(
+        "../img/cruise-1.webp" 1x,
+        "../img/cruise-1.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-1@2x.webp" 2x,
+          "../img/cruise-1@2x.jpg" 2x
+        );
+    }
+
+    background-position: top -10px left -20px;
+  }
+
+  &--atlantis {
+    background-image:
+      image-set(
+        "../img/cruise-3.webp" 1x,
+        "../img/cruise-3.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-3@2x.webp" 2x,
+          "../img/cruise-3@2x.jpg" 2x
+        );
+    }
+
+    background-position: top -10px left -20px;
+  }
+
+  &--odissey {
+    background-image:
+      image-set(
+        "../img/cruise-4.webp" 1x,
+        "../img/cruise-4.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-4@2x.webp" 2x,
+          "../img/cruise-4@2x.jpg" 2x
+        );
+    }
+
+    background-position: top -10px left -20px;
+  }
+
+  &--olympia {
+    background-image:
+      image-set(
+        "../img/cruise-5.webp" 1x,
+        "../img/cruise-5.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-5@2x.webp" 2x,
+          "../img/cruise-5@2x.jpg" 2x
+        );
+    }
+
+    background-position: top -10px left -20px;
+  }
+
+  &--aurora {
+    background-image:
+      image-set(
+        "../img/cruise-6.webp" 1x,
+        "../img/cruise-6.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-6@2x.webp" 2x,
+          "../img/cruise-6@2x.jpg" 2x
+        );
+    }
+
+    background-position: top -10px left -20px;
+  }
+
+  &--leonor {
+    background-image:
+      image-set(
+        "../img/cruise-7.webp" 1x,
+        "../img/cruise-7.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-7@2x.webp" 2x,
+          "../img/cruise-7@2x.jpg" 2x
+        );
+    }
+
+    background-position: top -10px left -20px;
+  }
+
+  &--minion-1 {
+    background-image:
+      image-set(
+        "../img/cruise-8.webp" 1x,
+        "../img/cruise-8.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-8@2x.webp" 2x,
+          "../img/cruise-8@2x.jpg" 2x
+        );
+    }
+
+    background-position: top -10px left -20px;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-alice-blue;
+  }
+
+  @include hover {
+    padding: 35px 25px;
+    background: $color-tangaroa;
+    box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+    align-items: flex-start;
+
+    h3 {
+      display: none;
+    }
+
+    .catalog__item-info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.catalog__item-info {
+  display: none;
+  color: $color-alice-blue;
+
+  h4 {
+    padding: 0;
+    margin: 0 0 14px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 9px 46px 10px 47px;
+    margin: 0;
+    background-color: $color-alice-blue;
+    color: $color-tangaroa;
+    justify-content: center;
+  }
+}
+
+
+.catalog__item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  h5 {
+    padding: 0;
+    margin: 0 0 2px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  p {
+    padding: 0;
+    margin: 0 0 11px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
