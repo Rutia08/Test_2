@@ -37,6 +37,7 @@
 
 .feedback__wrapper {
   margin: 0 auto;
+  max-width: 1920px;
   padding: 50px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop-feedback, $wrapper-padding-desktop-feedback-max) 50px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop-feedback, $wrapper-padding-desktop-feedback-max);
   display: grid;
   grid-template-columns: 1fr 38.75%;
@@ -191,8 +192,3 @@ input[type="checkbox"] {
     background-color: $color-alice-blue;
   }
 }
-
-
-
-
-

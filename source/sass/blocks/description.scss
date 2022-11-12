@@ -13,6 +13,7 @@
 
 .description__text {
   padding-right: 40px;
+  padding-top: 56px;
 
   h2 {
     padding: 0;
@@ -29,4 +30,10 @@
     font-size: 16px;
     line-height: 150%;
   }
+}
+
+.description__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

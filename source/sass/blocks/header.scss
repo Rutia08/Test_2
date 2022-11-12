@@ -32,6 +32,7 @@
 .header__list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 15px;
 }
 
 .header__list-item {
@@ -39,8 +40,8 @@
   align-content: center;
 
   a {
-    padding: 9px 30px;
-    margin: 0 3px;
+    padding: 9px 15px;
+    margin: 0 2px;
     font-weight: 500;
     font-size: 16px;
     line-height: 125%;
@@ -51,4 +52,3 @@
     }
   }
 }
-

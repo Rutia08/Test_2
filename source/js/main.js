@@ -13,6 +13,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  // map
+  let mapImage = document.querySelector('[data-img-map]');
+  let mapIframe = document.querySelector('[data-iframe-map]');
+
+  mapIframe.classList.remove('visually-hidden');
+  mapImage.classList.add('visually-hidden');
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
