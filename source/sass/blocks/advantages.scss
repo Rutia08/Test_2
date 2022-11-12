@@ -1,0 +1,64 @@
+.advantages {
+  background-color: $color-solitude;
+
+  background-image:
+  image-set(
+    "../img/advantages.webp" 1x,
+    "../img/advantages.jpg" 1x
+  );
+
+  @include retina {
+    background-image:
+      image-set(
+        "../img/advantages@2x.webp" 2x,
+        "../img/advantages@2x.jpg" 2x
+      );
+  }
+}
+
+.advantages__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 110px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop, $wrapper-padding-desktop-max) 120px;
+
+  h2 {
+    padding: 0;
+    margin: 0 0 50px 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.advantages__item {
+  padding: 30px 30px 50px 30px;
+
+  svg {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0 0 9px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}

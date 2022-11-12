@@ -1,0 +1,32 @@
+.description {
+  background-color: $color-alice-blue;
+}
+
+.description__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 120px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop, $wrapper-padding-desktop-max) 145px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.description__text {
+  padding-right: 40px;
+
+  h2 {
+    padding: 0;
+    margin: 0 0 23px 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+  p {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}

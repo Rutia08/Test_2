@@ -1,0 +1,48 @@
+.promo {
+  margin-top: -200px;
+  background-color: $color-maya-blue;
+
+  background-image:
+    image-set(
+      "../img/promo.webp" 1x,
+      "../img/promo.jpg" 1x
+    );
+
+  @include retina {
+    background-image:
+      image-set(
+        "../img/promo@2x.webp" 2x,
+        "../img/promo@2x.jpg" 2x
+      );
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -140px left;
+}
+
+.promo__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 340px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop, $wrapper-padding-desktop-max) 278px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop-promo, $wrapper-padding-desktop-promo-max);
+  color: $color-alice-blue;
+  box-shadow: 0px 4px 4px $color-transparent-2;
+
+  h1 {
+    padding: 0;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 122%;
+    text-shadow: 0px 4px 4px $color-transparent-2;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-shadow: 0px 4px 4px $color-transparent-2;
+  }
+}

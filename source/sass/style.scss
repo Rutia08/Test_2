@@ -13,13 +13,18 @@
 @import "global/utils";
 @import "global/container";
 
+
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 // @import "blocks/modal";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/description";
+@import "blocks/advantages";
 @import "blocks/catalog";
-
+@import "blocks/feedback";
 
 // ---------------------------------
 

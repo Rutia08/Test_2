@@ -1,0 +1,54 @@
+.header {
+  background-color: $color-maya-blue;
+}
+
+.header__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 35px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop-header, $wrapper-padding-desktop-max) 35px;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  min-width: 70px;
+  margin: 0 33px;
+  color: $color-alice-blue;
+
+  svg {
+    display: block;
+  }
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-toggle {
+  display: none;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__list-item {
+  display: flex;
+  align-content: center;
+
+  a {
+    padding: 9px 30px;
+    margin: 0 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: $color-alice-blue;
+
+    @include hover {
+      color: $color-tangaroa;
+    }
+  }
+}
+
