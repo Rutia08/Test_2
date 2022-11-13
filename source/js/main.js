@@ -13,6 +13,21 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  // mobile-menu
+  let header = document.querySelector('[data-header]');
+  let menuToggle = document.querySelector('[data-header-toggle]');
+  let headerList = document.querySelector('[data-header-list]');
+
+  header.classList.add('is-js');
+
+  menuToggle.onclick = () => {
+    header.classList.toggle('is-open');
+  };
+
+  headerList.onclick = () => {
+    header.classList.toggle('is-open');
+  };
+
   // map
   let mapImage = document.querySelector('[data-img-map]');
   let mapIframe = document.querySelector('[data-iframe-map]');
@@ -32,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
       inputName.classList.remove('is-invalid');
     }
-  }
+  };
 
   inputPhone.oninput = () => {
     if (inputPhone.value.length < 11) {
@@ -40,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
       inputPhone.classList.remove('is-invalid');
     }
-  }
+  };
 
   inputPhone.addEventListener('keypress', (evt) => {
     if (evt.keyCode < 47 || evt.keyCode > 57) {
@@ -54,7 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
       inputName.classList.remove('is-invalid');
     }
-  }
+  };
 
   inputEmail.oninput = () => {
     if (inputEmail.value.match(/([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})/)) {

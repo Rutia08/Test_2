@@ -5,7 +5,7 @@
 .description__wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 120px clamp(30px, $wrapper-padding-desktop, 110px) 145px;
+  padding: 120px clamp(30px, $padding-desktop-description, 110px) 145px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;

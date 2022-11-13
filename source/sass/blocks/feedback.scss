@@ -25,10 +25,10 @@
 
   @include vp-1023 {
     background-image:
-    image-set(
-      "../img/feedback-2.webp" 1x,
-      "../img/feedback-2.jpg" 1x
-    );
+      image-set(
+        "../img/feedback-2.webp" 1x,
+        "../img/feedback-2.jpg" 1x
+      );
 
     @include retina {
       background-image:
@@ -38,6 +38,10 @@
         );
     }
     background-size: auto;
+    background-position: top left -401px;
+  }
+
+  @include vp-799 {
     background-position: top left -501px;
   }
 
@@ -74,10 +78,20 @@
 }
 
 .feedback__info {
-  padding: 163px 0 163px 0;
+  padding: 163px 0 10px 0;
+
+  br {
+    display: none;
+  }
+
+  @include vp-1439 {
+    br {
+      display: block;
+    }
+  }
 
   @include vp-1023 {
-    padding: 0 0 52px 0;
+    padding: 0 0 10px 0;
   }
 
   h3 {
@@ -114,6 +128,7 @@
   padding: 44px 50px 50px 50px;
   color: $color-alice-blue;
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  min-height: 455px;
 
   @include vp-1023 {
     max-width: 403px;
@@ -162,6 +177,7 @@ input[type="email"] {
 .feedback__input-phone,
 .feedback__input-email {
   position: relative;
+
   span {
     display: none;
     position: absolute;
@@ -230,7 +246,6 @@ input[type="checkbox"] {
       position: absolute;
       top: 30px;
       left: -10px;
-      position: absolute;
       padding: 10px;
       z-index: 999;
       font-size: 15px;

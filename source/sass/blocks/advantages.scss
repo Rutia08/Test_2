@@ -25,14 +25,14 @@
 
   @include vp-1023 {
     background-size: cover;
-    background-position: top left -82px;
+    background-position: top left;
   }
 }
 
 .advantages__wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 110px clamp(30px, $wrapper-padding-desktop, 110px) 120px;
+  padding: 110px clamp(30px, $padding-desktop, 110px) 120px;
 
   @include vp-1023 {
     padding: 91px clamp(10px, $padding-tablet, 45px) 100px;

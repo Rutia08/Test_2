@@ -68,23 +68,14 @@ $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
 
 // резиновая верстка
-$wrapper-padding-desktop: percentage(calc(103 / 1366));
-
-$wrapper-padding-desktop-header: percentage(calc(70 / 1366));
 $padding-desktop: percentage(calc(70 / 1366));
-
-$wrapper-padding-tablet-header: percentage(calc(45 / 768));
 $padding-tablet: percentage(calc(45 / 768));
-
+$padding-mobile: percentage(calc(15 / 320));
 $padding-desktop-promo: percentage(calc(198 / 1366));
-
+$padding-desktop-description: percentage(calc(103 / 1366));
 $padding-desktop-feedback: percentage(calc(163 / 1366));
-
 $catalog-item-padding-desktop: percentage(calc(30 / 260));
 $catalog-item-padding-tablet: percentage(calc(35 / 309));
 $catalog-item-hover-padding-desktop: percentage(calc(25 / 260));
-$catalog-item-hover-padding-tablet: percentage(calc(35 / 309));
 
-
-
-
+$header-width-mobile: percentage(calc(285 / 320));

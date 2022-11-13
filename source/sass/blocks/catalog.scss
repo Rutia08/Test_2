@@ -1,7 +1,7 @@
 .catalog__wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 85px clamp(30px, $wrapper-padding-desktop, 110px) 120px;
+  padding: 85px clamp(30px, $padding-desktop, 110px) 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,7 @@
     padding: 23px clamp(5px, $catalog-item-padding-desktop, 35px) 28px;
 
     @include hover {
-      padding: 28px clamp(5px, $catalog-item-hover-padding-tablet, 38px) 35px;
+      padding: 28px clamp(5px, $catalog-item-padding-tablet, 38px) 35px;
       box-shadow: none;
     }
   }
@@ -157,10 +157,10 @@
 
     @include vp-1023 {
       background-image:
-      image-set(
-        "../img/cruise-4-2.webp" 1x,
-        "../img/cruise-4-2.jpg" 1x
-      );
+        image-set(
+          "../img/cruise-4-2.webp" 1x,
+          "../img/cruise-4-2.jpg" 1x
+        );
 
       @include retina {
         background-image:
@@ -178,7 +178,7 @@
       image-set(
         "../img/cruise-5.webp" 1x,
         "../img/cruise-5.jpg" 1x
-      );
+    );
 
     @include retina {
       background-image:
@@ -194,18 +194,18 @@
     @include vp-1023 {
 
       background-image:
-      image-set(
-        "../img/cruise-5-2.webp" 1x,
-        "../img/cruise-5-2.jpg" 1x
+        image-set(
+          "../img/cruise-5-2.webp" 1x,
+          "../img/cruise-5-2.jpg" 1x
       );
 
-    @include retina {
-      background-image:
-        image-set(
-          "../img/cruise-5-2@2x.webp" 2x,
-          "../img/cruise-5-2@2x.jpg" 2x
-        );
-    }
+      @include retina {
+        background-image:
+          image-set(
+            "../img/cruise-5-2@2x.webp" 2x,
+            "../img/cruise-5-2@2x.jpg" 2x
+          );
+      }
 
       background-position: top left -144px;
     }
@@ -247,6 +247,7 @@
           "../img/cruise-7@2x.jpg" 2x
         );
     }
+
     background-position: top left -146px;
 
     @include vp-1023 {

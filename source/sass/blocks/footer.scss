@@ -5,7 +5,7 @@
 .footer__wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 50px clamp(30px, $wrapper-padding-desktop, 110px);
+  padding: 50px clamp(30px, $padding-desktop, 110px);
   display: flex;
   justify-content: space-between;
 
@@ -44,6 +44,7 @@
 
 .footer__nav {
   display: flex;
+  flex-wrap: wrap;
   flex: auto;
 }
 
