@@ -217,17 +217,37 @@ input[type="checkbox"] {
 
   &:invalid + span {
     outline-color: $color-torch-red;
+  }
+
+  &:invalid:focus + span {
+    outline-color: $color-torch-red;
 
     &::after {
       color: $color-torch-red;
-      content: "Необходимо согласиться на обработку данных";
+      content: "Без этого флажка никак";
       display: block;
-      width: 310px;
+      width: 210px;
       position: absolute;
-      font-size: 15px;
       top: 30px;
-      left: 0;
+      left: -10px;
+      position: absolute;
+      padding: 10px;
       z-index: 999;
+      font-size: 15px;
+      background-color: $color-default-white;
+      border-radius: 4px;
+      box-shadow: 5px 5px 5px $color-default-black;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 10px;
+      background-color: $color-default-white;
+      top: 20px;
+      left: 0;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     }
   }
 }
