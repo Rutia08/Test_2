@@ -1,14 +1,20 @@
 .header {
-  background-color: $color-maya-blue;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 
 .header__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 35px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop-header, $wrapper-padding-desktop-max) 35px;
+  padding: 35px clamp(30px, $padding-desktop, 110px);
   max-width: 1920px;
   display: flex;
   justify-content: space-between;
+
+  @include vp-1023 {
+    padding: 30px clamp(10px, $padding-tablet, 45px);
+  }
 }
 
 .header__logo {
@@ -16,8 +22,18 @@
   margin: 0 33px;
   color: $color-alice-blue;
 
+  @include vp-1023 {
+    min-width: 38px;
+    margin: 0 10px 0 0;
+  }
+
   svg {
     display: block;
+
+    @include vp-1023 {
+      width: 38px;
+      height: 20px;
+    }
   }
 }
 
@@ -33,6 +49,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 15px;
+
+  @include vp-1023 {
+    margin-right: -12px;
+  }
 }
 
 .header__list-item {
@@ -49,6 +69,12 @@
 
     @include hover {
       color: $color-tangaroa;
+    }
+
+    @include vp-1023 {
+      padding: 3px 10px;
+      font-size: 14px;
+      line-height: 122%;
     }
   }
 }

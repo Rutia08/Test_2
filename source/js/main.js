@@ -20,6 +20,50 @@ window.addEventListener('DOMContentLoaded', () => {
   mapIframe.classList.remove('visually-hidden');
   mapImage.classList.add('visually-hidden');
 
+
+  // form
+  let inputName = document.querySelector('[data-name-input]');
+  let inputPhone = document.querySelector('[data-phone-input]');
+  let inputEmail = document.querySelector('[data-email-input]');
+
+  inputName.oninput = () => {
+    if (inputName.value.length < 2) {
+      inputName.classList.add('is-invalid');
+    } else {
+      inputName.classList.remove('is-invalid');
+    }
+  }
+
+  inputPhone.oninput = () => {
+    if (inputPhone.value.length < 11) {
+      inputPhone.classList.add('is-invalid');
+    } else {
+      inputPhone.classList.remove('is-invalid');
+    }
+  }
+
+  inputPhone.addEventListener('keypress', (evt) => {
+    if (evt.keyCode < 47 || evt.keyCode > 57) {
+      evt.preventDefault();
+    }
+  });
+
+  inputName.oninput = () => {
+    if (inputName.value.length < 2) {
+      inputName.classList.add('is-invalid');
+    } else {
+      inputName.classList.remove('is-invalid');
+    }
+  }
+
+  inputEmail.oninput = () => {
+    if (inputEmail.value.match(/([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})/)) {
+      inputEmail.classList.remove('is-invalid');
+    } else {
+      inputEmail.classList.add('is-invalid');
+    }
+  };
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

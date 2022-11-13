@@ -5,15 +5,32 @@
 .description__wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 120px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop, $wrapper-padding-desktop-max) 145px;
+  padding: 120px clamp(30px, $wrapper-padding-desktop, 110px) 145px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+
+  @include vp-1023 {
+    padding: 91px clamp(10px, $padding-tablet, 45px) 93px;
+    gap: 20px;
+  }
 }
 
 .description__text {
   padding-right: 40px;
   padding-top: 56px;
+
+  @include vp-1023 {
+    padding: 0;
+  }
+
+  br {
+    display: none;
+
+    @include vp-1023 {
+      display: block;
+    }
+  }
 
   h2 {
     padding: 0;
@@ -21,6 +38,12 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
+
+    @include vp-1023 {
+      font-size: 26px;
+      line-height: 140%;
+      margin: 0 0 16px 0;
+    }
   }
 
   p {
@@ -29,6 +52,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+
+    @include vp-1023 {
+      margin: 0 5px 0 0;
+    }
   }
 }
 
@@ -36,4 +63,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include vp-1023 {
+    align-items: flex-start;
+    margin: 9px 5px 0 0;
+  }
 }

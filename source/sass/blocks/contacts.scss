@@ -1,19 +1,30 @@
 .contacts__wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 118px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop, $wrapper-padding-desktop-max) 120px;
+  padding: 118px clamp(30px, $padding-desktop, 110px) 122px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+
+  @include vp-1023 {
+    padding: 100px clamp(10px, $padding-tablet, 45px);
+    gap: 30px;
+  }
 }
 
 .contacts__map {
   display: flex;
   align-items: center;
+  min-height: 306px;
 
   img {
     object-fit: contain;
+
+    @include vp-1023 {
+      width: 324px;
+      height: 335px;
+    }
   }
 
   iframe {
@@ -24,25 +35,47 @@
 }
 
 .contacts__text {
-  padding: 74px 0 77px 30px;
+  padding: 77px 0 10px 60px;
+
+  br {
+    display: none;
+  }
+
+  @include vp-1023 {
+    padding: 66px 0 67px;
+
+    br {
+      display:block;
+    }
+  }
 
   p {
     padding: 0;
-    margin: 0 0 27px 0;
+    margin: 0 0 32px 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
+
+    @include vp-1023 {
+      margin: 0 0 27px 0;
+    }
   }
 
   span {
     display: block;
     padding-left: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
   }
 
   a {
     display: block;
     padding-left: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 
     @include hover {
       color: $color-maya-blue;
@@ -57,8 +90,11 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    // transform: translateY(-50%);
   }
 }
+
 
 .contacts__block {
   position: relative;

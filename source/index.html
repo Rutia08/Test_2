@@ -52,7 +52,7 @@
       <section class="description">
         <div class="description__wrapper">
           <div class="description__text">
-            <h2>Путешествие на&nbsp;край Земли</h2>
+            <h2>Путешествие<br> на&nbsp;край Земли</h2>
             <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
           </div>
           <div class="description__picture">
@@ -79,10 +79,10 @@
               <svg aria-hidden="true" role="img" focusable="false" width="38" height="32" viewBox="0 0 38 32">
                 <use href="img/sprite.svg#advantages-icon-2"></use>
               </svg>
-              <h3>Система все включено</h3>
-              <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              <h3>Система все&nbsp;включено</h3>
+              <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--another-padding">
               <svg aria-hidden="true" role="img" focusable="false" width="44" height="32" viewBox="0 0 44 32">
                 <use href="img/sprite.svg#advantages-icon-3"></use>
               </svg>
@@ -299,21 +299,21 @@
           </div>
           <div class="feedback__form">
             <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
-            <form action="https://echo.htmlacademy.ru/" method="get">
+            <form action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
               <div class="feedback__input-name">
                 <label class="visually-hidden" for="name">Имя.</label>
-                <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off" data-name-input required>
-                <span>Имя может быть любым, не короче 1 символа</span>
+                <input type="text" name="name" id="name" placeholder="Имя" data-name-input required>
+                <span>Имя может быть любым, но не короче 2 символов</span>
               </div>
               <div class="feedback__input-phone">
                 <label class="visually-hidden" for="phone">Телефон.</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="\+7(\s)?([\(])?\d{3}([\)])?(\s)?\d{3}(\s)?\d{2}(\s)?\d{2}" maxlength="12" autocomplete="off" data-phone-input required title="+79999999999">
-                <span>Введите телефон в формате +79999999999</span>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="\+?[\(\)\d\s\-]{7,}" maxlength="11" data-phone-input required title="79999999999">
+                <span>Введите номер телефона без "+" (например: 89269269292)</span>
               </div>
               <div class="feedback__input-email">
                 <label class="visually-hidden" for="email">Почта.</label>
-                <input type="email" name="email" id="email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" autocomplete="off" data-email-input required title="">
-                <span>Введите вашу почту</span>
+                <input type="email" name="email" id="email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" data-email-input required title="">
+                <span>Введите почту в формате xx@xx.xx</span>
               </div>
               <div class="feedback__checkbox">
                 <label>
@@ -339,9 +339,9 @@
             <iframe class="visually-hidden" src="https://yandex.ru/map-widget/v1/?um=constructor%3A93e74b0e037a719400e800dac61f9acb51d95d865b25d7f890cd453e668def1e&amp;source=constructor" width="560" height="306" data-iframe-map></iframe>
           </div>
           <div class="contacts__text">
-            <p>У&nbsp;вас ещё остались вопросы или сомнения?<br> Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
+            <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
             <div class="contacts__block">
-              <span>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</span>
+              <span>г. Санкт Петербург,<br> ул. Большая Конюшенная, 19/8</span>
               <svg aria-hidden="true" role="img" focusable="false" width="18" height="22">
                 <use href="img/sprite.svg#map-pin"></use>
               </svg>
@@ -359,8 +359,8 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo">
-          <a>
-            <svg aria-hidden="true" role="img" focusable="false" width="70" height="38" aria-label="Логотип Antarctic cruises.">
+          <a href="#">
+            <svg aria-hidden="true" role="img" focusable="true" width="70" height="38" aria-label="Логотип Antarctic cruises.">
               <use href="img/sprite.svg#logo"></use>
             </svg>
           </a>

@@ -1,5 +1,4 @@
 .promo {
-  margin-top: -200px;
   background-color: $color-maya-blue;
 
   background-image:
@@ -16,12 +15,17 @@
       );
   }
 
+  background-position: top -188px left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top -96px left;
 
   @include vp-1366 {
     background-size: 1366px;
+  }
+
+  @include vp-799 {
+    background-position: top left -41px;
+    background-size: 850px;
   }
 }
 
@@ -29,10 +33,15 @@
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 363px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop, $wrapper-padding-desktop-max) 277px clamp($wrapper-padding-desktop-min, $wrapper-padding-desktop-promo, $wrapper-padding-desktop-promo-max);
+  padding: 271px clamp(30px, $padding-desktop, 110px) 277px clamp(30px, $padding-desktop-promo, 200px);
   color: $color-alice-blue;
-  z-index: 1000;
+  z-index: 1;
   box-shadow: 0 8px 4px -4px $color-transparent-2;
+
+  @include vp-1023 {
+    box-shadow: none;
+    padding: 268px clamp(10px, $padding-tablet, 45px) 275px;
+  }
 
   h1 {
     padding: 0;
@@ -41,6 +50,11 @@
     font-size: 54px;
     line-height: 122%;
     text-shadow: 0 4px 4px $color-transparent-2;
+
+    @include vp-1023 {
+      text-shadow: none;
+      font-size: 50px;
+    }
   }
 
   p {
@@ -50,5 +64,10 @@
     font-size: 20px;
     line-height: 120%;
     text-shadow: 0 4px 4px $color-transparent-2;
+
+    @include vp-1023 {
+      text-shadow: none;
+      font-size: 18px;
+    }
   }
 }

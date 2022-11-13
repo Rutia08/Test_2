@@ -17,6 +17,7 @@ $color-alice-blue:                  #f9fbfd;
 $color-maya-blue:                   #78bcfc;
 $color-tangaroa:                    #011c40;
 $color-solitude:                    #e3ecf6;
+$color-dark-goldenrod:              #b77900;
 $color-transparent-2:               rgba(0, 0, 0, 0.25);
 $color-transparent-3:               rgba(1, 28, 64, 0.7);
 
@@ -53,6 +54,7 @@ $trans-600:                         0.6s $tf-default;
 $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
+$vp-800:                            800px;
 $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1366:                           1366px;
@@ -66,52 +68,23 @@ $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
 
 // резиновая верстка
-$wrapper-padding-desktop-min: 30px;
 $wrapper-padding-desktop: percentage(calc(103 / 1366));
+
 $wrapper-padding-desktop-header: percentage(calc(70 / 1366));
-$wrapper-padding-desktop-promo: percentage(calc(198 / 1366));
-$wrapper-padding-desktop-feedback: percentage(calc(163 / 1366));
-$wrapper-padding-desktop-max: 110px;
-$wrapper-padding-desktop-promo-max: 200px;
-$wrapper-padding-desktop-feedback-max: 220px;
+$padding-desktop: percentage(calc(70 / 1366));
 
-$wrapper-padding-tablet-min: 50px;
-$wrapper-padding-tablet: percentage(calc(50 / 770));
-$wrapper-padding-tablet-max: 100px;
+$wrapper-padding-tablet-header: percentage(calc(45 / 768));
+$padding-tablet: percentage(calc(45 / 768));
 
-$wrapper-padding-mobile-min: 25px;
-$wrapper-padding-mobile: percentage(calc(25 / 320));
-$wrapper-padding-mobile-max: 50px;
+$padding-desktop-promo: percentage(calc(198 / 1366));
 
-// promo
-$promo-margin-desktop-min: 50px;
-$promo-margin-desktop: percentage(calc(125 / 1220));
-$promo-margin-desktop-max: 125px;
+$padding-desktop-feedback: percentage(calc(163 / 1366));
 
-$promo-grid-width-desktop: percentage(calc(600 / 1220));
+$catalog-item-padding-desktop: percentage(calc(30 / 260));
+$catalog-item-padding-tablet: percentage(calc(35 / 309));
+$catalog-item-hover-padding-desktop: percentage(calc(25 / 260));
+$catalog-item-hover-padding-tablet: percentage(calc(35 / 309));
 
-// about
-$about-wrapper-padding-right-desktop: percentage(calc(335 / 1920));
-$about-wrapper-padding-right-desktop-max: 335px;
 
-// catalog
-$list-grid-gap-desktop-min: 20px;
-$list-grid-gap-desktop: 7%;
-$list-grid-gap-desktop-max: 85px;
 
-$title-margin-desktop-min: 10px;
-$title-margin-desktop: 10%;
-$title-margin-right-desktop: 40%;
-$title-margin-desktop-max: 80px;
-$title-margin-right-desktop-max: 150px;
 
-$card-width-desktop-min: 150px;
-$card-width-desktop: 100%;
-$card-width-desktop-max: 350px;
-
-// feedback
-$before-right-position-desktop: percentage(calc(972 / 1920));
-
-// footer
-$grid-width: percentage(calc(345 / 1220));
-$grid-width-2: percentage(calc(220 / 1220));
