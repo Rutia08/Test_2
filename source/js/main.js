@@ -14,37 +14,29 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   // mobile-menu
+  let html = document.querySelector('[data-html]');
   let body = document.querySelector('[data-body]');
   let header = document.querySelector('[data-header]');
   let menuToggle = document.querySelector('[data-header-toggle]');
   let headerList = document.querySelector('[data-header-list]');
 
   header.classList.add('is-js');
-  body.style.setProperty('overflow-y', 'hidden');
-  body.style.setProperty('overflow-y', 'auto');
+  html.style.setProperty('overflow-y', 'auto');
 
   menuToggle.onclick = () => {
     header.classList.toggle('is-open');
 
-    if (body.style.getPropertyValue('overflow-y') === 'auto') {
-      body.style.setProperty('overflow-y', 'hidden');
+    if (html.style.getPropertyValue('overflow-y') === 'auto') {
+      html.style.setProperty('overflow-y', 'hidden');
     } else {
-      body.style.setProperty('overflow-y', 'auto');
+      html.style.setProperty('overflow-y', 'auto');
     }
   };
 
   headerList.onclick = () => {
     header.classList.remove('is-open');
-    body.style.setProperty('overflow-y', 'auto');
+    html.style.setProperty('overflow-y', 'auto');
   };
-
-  // map
-  let mapImage = document.querySelector('[data-img-map]');
-  let mapIframe = document.querySelector('[data-iframe-map]');
-
-  mapIframe.classList.remove('visually-hidden');
-  mapImage.classList.add('visually-hidden');
-
 
   // form
   let inputName = document.querySelector('[data-name-input]');
@@ -93,6 +85,47 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+  });
+
+  // map
+  let mapImage = document.querySelector('[data-img-map]');
+  let mapYandex = document.querySelector('[data-map]');
+
+  mapYandex.classList.remove('visually-hidden');
+  mapImage.classList.add('visually-hidden');
+
+  // яндекс-карта
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.938635, 30.323118],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: '../img/svg/map-pin-2.svg',
+            // Размеры метки.
+            iconImageSize: [18, 22],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark)
   });
 });
 
