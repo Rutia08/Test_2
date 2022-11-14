@@ -1,5 +1,6 @@
 .promo {
   background-color: $color-maya-blue;
+  margin-top: -180px;
 
   background-image:
     image-set(
@@ -15,7 +16,7 @@
       );
   }
 
-  background-position: top -188px left;
+  background-position: top -116px left;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -24,8 +25,13 @@
   }
 
   @include vp-799 {
-    background-position: top left -41px;
+    background-position: top 97px left -41px;
     background-size: 850px;
+  }
+
+  @include vp-767 {
+    background-size: 767px;
+    background-position: top 103px left -204px;
   }
 }
 
@@ -33,14 +39,18 @@
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 271px clamp(30px, $padding-desktop, 110px) 277px clamp(30px, $padding-desktop-promo, 200px);
+  padding: 343px clamp(30px, $padding-desktop, 110px) 277px clamp(30px, $padding-desktop-promo, 200px);
   color: $color-alice-blue;
   z-index: 1;
   box-shadow: 0 8px 4px -4px $color-transparent-2;
 
   @include vp-1023 {
     box-shadow: none;
-    padding: 268px clamp(10px, $padding-tablet, 45px) 275px;
+    padding: 365px clamp(10px, $padding-tablet, 45px) 275px;
+  }
+
+  @include vp-767 {
+    padding: 284px clamp(15px, $padding-mobile, 30px) 177px;
   }
 
   h1 {
@@ -55,6 +65,11 @@
       text-shadow: none;
       font-size: 50px;
     }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 125%;
+    }
   }
 
   p {
@@ -68,6 +83,12 @@
     @include vp-1023 {
       text-shadow: none;
       font-size: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 140%;
+      padding-right: 60px;
     }
   }
 }

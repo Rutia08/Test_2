@@ -19,6 +19,7 @@ html {
   font-family: $ff-montserrat;
   color: $color-tangaroa;
   scroll-behavior: smooth;
+  min-width: 320px;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

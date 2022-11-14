@@ -58,6 +58,10 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
+
+    @include vp-799 {
+      margin-top: 26px;
+    }
   }
 }
 
@@ -75,6 +79,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @include vp-767 {
+    padding: 59px clamp(15px, $padding-mobile, 30px) 65px;
+  }
 }
 
 .feedback__info {
@@ -91,7 +99,15 @@
   }
 
   @include vp-1023 {
-    padding: 0 0 10px 0;
+    padding: 0 0 52px 0;
+  }
+
+  @include vp-767 {
+    padding: 0 0 33px 0;
+
+    br {
+      display: none;
+    }
   }
 
   h3 {
@@ -105,6 +121,13 @@
       margin: 0 0 5px 0;
       font-size: 34px;
     }
+
+    @include vp-767 {
+      margin: 0 0 13px 0;
+      font-size: 24px;
+      line-height: 130%;
+      text-align: center;
+    }
   }
 
   p {
@@ -117,6 +140,13 @@
     @include vp-1023 {
       max-width: 420px;
       text-align: center;
+    }
+
+    @include vp-767 {
+      padding: 0 10px;
+      font-size: 16px;
+      line-height: 140%;
+      max-width: auto;
     }
   }
 }
@@ -134,12 +164,22 @@
     max-width: 403px;
   }
 
+  @include vp-767 {
+    padding: 35px 30px 40px;
+  }
+
   p {
     padding: 0;
     margin: 0 0 27px 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
+
+    @include vp-767 {
+      margin: 0 0 28px 0;
+      line-height: 140%;
+      text-align: center;
+    }
   }
 
   input {
@@ -214,6 +254,10 @@ input[type="email"] {
 
 .feedback__input-email {
   margin: 0 0 16px 0;
+
+  @include vp-767 {
+    margin: 0 0 21px 0;
+  }
 }
 
 input[type="checkbox"] {
@@ -270,11 +314,21 @@ input[type="checkbox"] {
 .feedback__checkbox {
   margin-left: 23px;
 
+  @include vp-767 {
+    margin-left: 27px;
+  }
+
   label {
+    display: block;
     font-weight: 400;
     font-size: 10px;
     line-height: 130%;
     position: relative;
+
+    @include vp-767 {
+      line-height: 120%;
+      padding: 0 50px 0 0;
+    }
   }
 
   span {
@@ -286,5 +340,13 @@ input[type="checkbox"] {
     width: 18px;
     height: 18px;
     background-color: $color-alice-blue;
+
+    @include vp-767 {
+      top: 0;
+      transform: translateY(0);
+      left: -27px;
+      width: 20px;
+      height: 20px;
+    }
   }
 }

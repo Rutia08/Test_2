@@ -14,18 +14,28 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   // mobile-menu
+  let body = document.querySelector('[data-body]');
   let header = document.querySelector('[data-header]');
   let menuToggle = document.querySelector('[data-header-toggle]');
   let headerList = document.querySelector('[data-header-list]');
 
   header.classList.add('is-js');
+  body.style.setProperty('overflow-y', 'hidden');
+  body.style.setProperty('overflow-y', 'auto');
 
   menuToggle.onclick = () => {
     header.classList.toggle('is-open');
+
+    if (body.style.getPropertyValue('overflow-y') === 'auto') {
+      body.style.setProperty('overflow-y', 'hidden');
+    } else {
+      body.style.setProperty('overflow-y', 'auto');
+    }
   };
 
   headerList.onclick = () => {
-    header.classList.toggle('is-open');
+    header.classList.remove('is-open');
+    body.style.setProperty('overflow-y', 'auto');
   };
 
   // map

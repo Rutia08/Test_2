@@ -1,13 +1,17 @@
 .catalog__wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 85px clamp(30px, $padding-desktop, 110px) 120px;
+  padding: 85px clamp(30px, $padding-desktop-2, 110px) 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include vp-1023 {
     padding: 90px clamp(10px, $padding-tablet, 45px) 100px;
+  }
+
+  @include vp-767 {
+    padding: 57px clamp(15px, $padding-mobile, 30px) 65px;
   }
 
   h2 {
@@ -19,6 +23,11 @@
 
     @include vp-1023 {
       font-size: 26px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 30px 0;
+      font-size: 24px;
     }
   }
 }
@@ -35,6 +44,12 @@
   @include vp-1023 {
     grid-template-columns: repeat(2, 47.7%);
     column-gap: 4.6%;
+  }
+
+  @include vp-767 {
+    padding: 0 10px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
@@ -83,6 +98,17 @@
     @include hover {
       padding: 28px clamp(5px, $catalog-item-padding-tablet, 38px) 35px;
       box-shadow: none;
+    }
+  }
+
+  @include vp-767 {
+    padding: 25px 25px 17px;
+    margin: 0 auto;
+    align-self: center;
+    min-width: 270px;
+
+    @include hover {
+      padding: 29px 25px 35px;
     }
   }
 
