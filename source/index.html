@@ -16,39 +16,39 @@
   <body data-body>
     <header class="header" data-header>
       <div class="header__wrapper">
-        <div class="header__logo">
-          <svg aria-hidden="true" role="img" focusable="false" width="70" height="38" aria-label="Логотип Antarctic cruises.">
-            <use href="img/sprite.svg#logo"></use>
-          </svg>
+        <div class="header__menu">
+          <div class="header__logo">
+            <svg aria-hidden="true" role="img" focusable="false" width="70" height="38" aria-label="Логотип Antarctic cruises.">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </div>
+          <nav class="header__nav" data-header-nav>
+            <button class="header__nav-toggle btn" type="button" data-header-toggle>
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
+            <ul class="header__list" data-header-list>
+              <li class="header__list-item">
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#">Направления</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#catalog">Ближайшие круизы</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__nav" data-header-nav>
-          <button class="header__nav-toggle btn" type="button" data-header-toggle>
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <ul class="header__list" data-header-list>
-            <li class="header__list-item">
-              <a href="#advantages">Преимущества</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#">Направления</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#catalog">Ближайшие круизы</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="promo">
-        <div class="promo__wrapper">
+        <div class="header_promo" data-header-promo>
           <h1>Круизы в&nbsp;Антарктику</h1>
           <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
-      </section>
+      </div>
+    </header>
+    <main>
       <section class="description">
         <div class="description__wrapper">
           <div class="description__text">
@@ -295,7 +295,7 @@
         <div class="feedback__wrapper">
           <div class="feedback__info">
             <h3>Раннее бронирование</h3>
-             <p>Забронируйте тур за&nbsp;3&#8722;6&nbsp;месяцев <br>до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            <p>Забронируйте тур за&nbsp;3&#8722;6&nbsp;месяцев <br>до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
           <div class="feedback__form">
             <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
@@ -412,9 +412,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6e5add2d-05ab-45b0-9971-4a4e5d2744fa" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6e5add2d-05ab-45b0-9971-4a4e5d2744fa"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
-

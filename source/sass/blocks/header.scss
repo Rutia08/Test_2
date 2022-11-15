@@ -1,25 +1,69 @@
 .header {
   position: relative;
   z-index: 2;
-}
+  background: $color-tangaroa;
+  background-image:
+    image-set(
+      "../img/promo.webp" 1x,
+      "../img/promo.jpg" 1x
+    );
 
-.header__wrapper {
-  position: relative;
-  margin: 0 auto;
-  padding: 35px clamp(30px, $padding-desktop, 110px);
-  max-width: 1920px;
-  display: flex;
-  justify-content: space-between;
+  @include retina {
+    background-image:
+      image-set(
+        "../img/promo@2x.webp" 2x,
+        "../img/promo@2x.jpg" 2x
+      );
+  }
 
-  @include vp-1023 {
-    padding: 30px clamp(10px, $padding-tablet, 45px);
+  background-position: top -188px left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include vp-1366 {
+    background-size: 1366px;
+  }
+
+  @include vp-799 {
+    background-position: top left -41px;
+    background-size: 850px;
   }
 
   @include vp-767 {
-    padding: 20px clamp(15px, $padding-mobile, 30px);
+    background-size: 767px;
+    background-position: top left;
+  }
+
+  @include vp-374 {
+    background-size: 757px;
+    background-position: top left -198px;
+    min-height: 500px;
+  }
+}
+
+.header__wrapper {
+  padding: 35px clamp(30px, $padding-desktop, 110px) 277px;
+  margin: 0 auto;
+  max-width: 1920px;
+  box-shadow: 0 8px 4px -4px $color-transparent-2;
+
+  @include vp-1023 {
+    padding: 30px clamp(10px, $padding-tablet, 45px) 275px;
+    box-shadow: none;
+  }
+
+  @include vp-767 {
+    padding: 20px clamp(15px, $padding-mobile, 30px) 10px;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-767 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
 }
 
@@ -91,7 +135,7 @@
   }
 
   @include vp-767 {
-    margin: 24px 0 0 0;
+    margin: 0;
   }
 }
 
@@ -113,7 +157,7 @@
     color: $color-alice-blue;
 
     @include hover {
-      color: $color-tangaroa;
+      color: $color-maya-blue;
     }
 
     @include vp-1023 {
@@ -132,37 +176,99 @@
   }
 }
 
+.header_promo {
+  margin: 0;
+  padding: 198px clamp(35px, $padding-desktop-3, 140px) 0;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    padding: 215px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 20px 0 0;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 122%;
+    text-shadow: 0 4px 4px $color-transparent-2;
+
+    @include vp-1023 {
+      text-shadow: none;
+      font-size: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 125%;
+    }
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-shadow: 0 4px 4px $color-transparent-2;
+
+    @include vp-1023 {
+      text-shadow: none;
+      font-size: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 140%;
+      padding-right: 60px;
+    }
+  }
+}
+
 [data-header].is-js {
   @include vp-767 {
     .header__wrapper {
       flex-direction: row;
+      padding: 20px clamp(15px, $padding-mobile, 30px) 177px;
     }
 
     .header__nav-toggle {
       display: block;
-      margin-bottom: 5px;
+      margin-top: 4px;
     }
 
     .header__list {
       display: none;
     }
+
+    .header-promo {
+      padding: 124px 0 0;
+    }
   }
 }
 
 [data-header].is-open {
-  @include vp-767 {
-    right: 0;
-    top: 0;
+  position: relative;
 
-    .header__wrapper {
+  .header__menu {
+    @include vp-767 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100vw;
       height: 100vh;
       box-sizing: border-box;
       margin: 0 0 0 auto;
-      padding-left: $header-width-mobile;
+      padding: 20px 11px 11px $header-width-mobile;
       background: $header-mobile-gradient;
       align-items: flex-start;
       justify-content: flex-start;
       flex-direction: column;
+      overflow-y: auto;
     }
 
     .header__logo {
@@ -181,8 +287,8 @@
 
     .header__nav-toggle {
       position: absolute;
-      top: -30px;
-      right: -3px;
+      top: -35px;
+      right: 0;
       width: 20px;
 
       &::before,
@@ -210,11 +316,16 @@
       display: flex;
       flex-direction: column;
       flex: auto;
+      margin: 24px 0 0 0;
     }
 
     a {
       justify-content: flex-start;
       color: $color-tangaroa;
     }
+  }
+
+  .header_promo {
+    @include visually-hidden;
   }
 }
