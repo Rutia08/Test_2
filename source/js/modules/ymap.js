@@ -16,8 +16,7 @@ const map = () => {
     ),
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Собственный значок метки',
-        balloonContent: 'Это красивая метка',
+        hintContent: 'Круизы в Антарктику'
     }, {
         // Опции.
         // Необходимо указать данный тип макета.
@@ -28,7 +27,7 @@ const map = () => {
         iconImageSize: [18, 22],
         // Смещение левого верхнего угла иконки относительно
         // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38],
+        iconImageOffset: [-9, -22],
     });
 
     myMap.geoObjects
