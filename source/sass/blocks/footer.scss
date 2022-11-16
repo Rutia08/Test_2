@@ -74,8 +74,16 @@
 }
 
 .footer__social {
+  display: flex;
+  flex-wrap: wrap;
+
   @include vp-767 {
     width: 100%;
+    justify-content: center;
+  }
+
+  @include vp-374 {
+    justify-content: flex-start;
   }
 }
 
@@ -91,6 +99,7 @@
 
   &--social {
     margin: 0 -17px 0 0;
+    max-width: 300px;
 
     @include vp-1023 {
       margin: 0 -15px 0 0;

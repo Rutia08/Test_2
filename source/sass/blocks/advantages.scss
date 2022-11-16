@@ -15,17 +15,31 @@
       );
   }
 
-  background-position: top -148px left;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include vp-1439 {
+    background-position: top -156px left;
+  }
 
   @include vp-1366 {
     background-size: 1366px;
   }
 
-  @include vp-1023 {
-    background-size: cover;
-    background-position: top left;
+  @include vp-799 {
+    background-size: 934px 588px;
+    background-position: top left -85px;
+  }
+
+  @include vp-767 {
+    background-size: 1585px 997px;
+    background-position: top left -10px;
+  }
+
+  @include vp-374 {
+    background-size: 1585px 997px;
+    background-position: top left -10px;
   }
 }
 

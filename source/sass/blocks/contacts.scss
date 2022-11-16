@@ -8,12 +8,12 @@
   gap: 40px;
 
   @include vp-1023 {
-    padding: 100px clamp(10px, $padding-tablet, 45px) 68px;
+    padding: 100px clamp(10px, $padding-tablet, 45px) 72px;
     gap: 25px;
   }
 
   @include vp-767 {
-    padding: 57px clamp(15px, $padding-mobile, 30px) 80px;
+    padding: 58px clamp(15px, $padding-mobile, 30px) 27px;
     display: flex;
     flex-direction: column;
   }

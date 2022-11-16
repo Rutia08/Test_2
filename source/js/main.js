@@ -101,7 +101,8 @@ window.addEventListener('DOMContentLoaded', () => {
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
       center: [59.938635, 30.323118],
-      zoom: 16
+      zoom: 16,
+      controls: ['zoomControl', 'typeSelector',  'fullscreenControl', 'routeButtonControl']
     }, {
         searchControlProvider: 'yandex#search'
     }),
