@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-html>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Круизы в Антарктику">
-    <title>Antarctic cruises</title>
+    <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="img/favicon.ico">
     <link rel="preload" href="fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -13,42 +13,42 @@
     <link rel="preload" href="fonts/montserrat-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
   </head>
-  <body>
-    <header class="header">
+  <body data-body>
+    <header class="header" data-header>
       <div class="header__wrapper">
-        <div class="header__logo">
-          <svg aria-hidden="true" role="img" focusable="false" width="70" height="38" aria-label="Логотип Antarctic cruises.">
-            <use href="img/sprite.svg#logo"></use>
-          </svg>
+        <div class="header__menu">
+          <div class="header__logo">
+            <svg aria-hidden="true" role="img" focusable="false" width="70" height="38" aria-label="Логотип Antarctic cruises.">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </div>
+          <nav class="header__nav" data-header-nav>
+            <button class="header__nav-toggle btn" type="button" data-header-toggle>
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
+            <ul class="header__list" data-header-list>
+              <li class="header__list-item">
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#">Направления</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#catalog">Ближайшие круизы</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__nav">
-          <button class="header__nav-toggle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <ul class="header__list">
-            <li class="header__list-item">
-              <a href="#advantages">Преимущества</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#">Направления</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#catalog">Ближайшие круизы</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="promo">
-        <div class="promo__wrapper">
+        <div class="header__promo" data-header-promo>
           <h1>Круизы в&nbsp;Антарктику</h1>
           <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
-      </section>
+      </div>
+    </header>
+    <main>
       <section class="description">
         <div class="description__wrapper">
           <div class="description__text">
@@ -72,21 +72,21 @@
               <svg aria-hidden="true" role="img" focusable="false" width="27" height="32" viewBox="0 0 27 32">
                 <use href="img/sprite.svg#advantages-icon-1"></use>
               </svg>
-              <h3>Небольшой круизный лайнер</h3>
+              <h3>Небольшой <br> круизный лайнер</h3>
               <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
             </li>
             <li class="advantages__item">
               <svg aria-hidden="true" role="img" focusable="false" width="38" height="32" viewBox="0 0 38 32">
                 <use href="img/sprite.svg#advantages-icon-2"></use>
               </svg>
-              <h3>Система все&nbsp;включено</h3>
+              <h3>Система <br>все&nbsp;включено</h3>
               <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
             </li>
             <li class="advantages__item advantages__item--another-padding">
               <svg aria-hidden="true" role="img" focusable="false" width="44" height="32" viewBox="0 0 44 32">
                 <use href="img/sprite.svg#advantages-icon-3"></use>
               </svg>
-              <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+              <h3>Экскурсионные <br> туры на&nbsp;Zodiac</h3>
               <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiack c&nbsp;опытными экскурсоводами.</p>
             </li>
           </ul>
@@ -295,7 +295,7 @@
         <div class="feedback__wrapper">
           <div class="feedback__info">
             <h3>Раннее бронирование</h3>
-            <p>Забронируйте тур за&nbsp;3-6 месяцев <br> до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            <p>Забронируйте тур за&nbsp;3&#8722;6&nbsp;месяцев <br>до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
           <div class="feedback__form">
             <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
@@ -308,7 +308,7 @@
               <div class="feedback__input-phone">
                 <label class="visually-hidden" for="phone">Телефон.</label>
                 <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="\+?[\(\)\d\s\-]{7,}" maxlength="11" data-phone-input required title="79999999999">
-                <span>Введите номер телефона без "+" (например: 89269269292)</span>
+                <span>Введите номер телефона без "+" (например: 79269269292)</span>
               </div>
               <div class="feedback__input-email">
                 <label class="visually-hidden" for="email">Почта.</label>
@@ -336,12 +336,12 @@
                 srcset="img/map.webp 1x, img/map@2x.webp 2x">
               <img width="560" height="306" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Карта." data-img-map>
             </picture>
-            <iframe class="visually-hidden" src="https://yandex.ru/map-widget/v1/?um=constructor%3A93e74b0e037a719400e800dac61f9acb51d95d865b25d7f890cd453e668def1e&amp;source=constructor" width="560" height="306" data-iframe-map></iframe>
+            <div id="map" class="visually-hidden" data-map></div>
           </div>
           <div class="contacts__text">
             <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
             <div class="contacts__block">
-              <span>г. Санкт Петербург,<br> ул. Большая Конюшенная, 19/8</span>
+              <span>г. Санкт-Петербург,<br> ул. Большая Конюшенная, 19/8</span>
               <svg aria-hidden="true" role="img" focusable="false" width="18" height="22">
                 <use href="img/sprite.svg#map-pin"></use>
               </svg>
@@ -374,7 +374,7 @@
               <a href="#">Направления</a>
             </li>
             <li class="footer__list-item">
-              <a href="#catalog">Ближайшие круизы</a>
+              <a href="#catalog">Ближайшие&nbsp;круизы</a>
             </li>
             <li class="footer__list-item">
               <a href="#contacts">Контакты</a>
@@ -393,7 +393,7 @@
               </a>
             </li>
             <li class="footer__list-item footer__list-item--social">
-              <a href="#">
+              <a href="https://dzen.ru/html_academy">
                 <span class="visually-hidden">Дзен.</span>
                 <svg aria-hidden="true" role="img" focusable="false" width="20" height="20">
                   <use href="img/sprite.svg#logo-social-2"></use>
@@ -401,7 +401,7 @@
               </a>
             </li>
             <li class="footer__list-item footer__list-item--social">
-              <a href="#">
+              <a href="https://www.reddit.com/r/HTML/">
                 <span class="visually-hidden">Reddit.</span>
                 <svg aria-hidden="true" role="img" focusable="false" width="20" height="20">
                   <use href="img/sprite.svg#logo-social-3"></use>
@@ -412,6 +412,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6e5add2d-05ab-45b0-9971-4a4e5d2744fa"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
