@@ -13,9 +13,19 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
 
+$color-alice-blue:                  #f9fbfd;
+$color-maya-blue:                   #78bcfc;
+$color-tangaroa:                    #011c40;
+$color-solitude:                    #e3ecf6;
+$color-dark-goldenrod:              #b77900;
+$color-transparent-2:               rgba(0, 0, 0, 0.25);
+$color-transparent-3:               rgba(1, 28, 64, 0.7);
+$color-transparent-4:               rgba(1, 28, 64, 0);
+
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
 
 // Typography
 // ---------------------------------
@@ -26,8 +36,8 @@ $fz-default:                        16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
-
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-montserrat:                     "Montserrat", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -46,8 +56,10 @@ $trans-600:                         0.6s $tf-default;
 $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
+$vp-800:                            800px;
 $vp-1024:                           1024px;
 $vp-1280:                           1280px;
+$vp-1366:                           1366px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 
@@ -56,3 +68,19 @@ $vp-1920:                           1920px;
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+// резиновая верстка
+$padding-desktop: percentage(calc(70 / 1366));
+$padding-desktop-2: percentage(calc(103 / 1366));
+$padding-desktop-3: percentage(calc(143 / 1366));
+$padding-tablet: percentage(calc(45 / 768));
+$padding-mobile: percentage(calc(15 / 320));
+$padding-desktop-promo: percentage(calc(198 / 1366));
+$padding-desktop-feedback: percentage(calc(163 / 1366));
+$catalog-item-padding-desktop: percentage(calc(30 / 260));
+$catalog-item-padding-tablet: percentage(calc(35 / 309));
+$catalog-item-hover-padding-desktop: percentage(calc(25 / 260));
+$catalog-width-mobile: percentage(calc(270 / 300));
+
+$header-width-mobile: 100 - percentage(calc(285 / 320));
+$header-mobile-gradient:             linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) $header-width-mobile, rgba(249, 251, 253, 1) $header-width-mobile);

@@ -16,8 +16,10 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-montserrat;
+  color: $color-tangaroa;
+  scroll-behavior: smooth;
+  min-width: 320px;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,12 +32,17 @@ html {
 body {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-alice-blue;
+}
 
-  background-color: $color-default-white;
+main {
+  flex: auto;
 }
 
 a {
-  color: $color-default-black;
+  color: $color-tangaroa;
   text-decoration: none;
 }
 
@@ -48,6 +55,13 @@ video {
 
 textarea {
   resize: none;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 // chrome autofill background removal

@@ -1,0 +1,413 @@
+.catalog__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 85px clamp(30px, $padding-desktop-2, 110px) 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include vp-1023 {
+    padding: 90px clamp(10px, $padding-tablet, 45px) 100px;
+  }
+
+  @include vp-767 {
+    padding: 57px clamp(15px, $padding-mobile, 30px) 65px;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0 0 49px 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+
+    @include vp-1023 {
+      font-size: 26px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 30px 0;
+      font-size: 24px;
+    }
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  column-gap: 2.65%;
+  row-gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 47.7%);
+    column-gap: 4.6%;
+  }
+
+  @include vp-767 {
+    padding: 0 10px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.catalog__item {
+  padding: 23px clamp(5px, $catalog-item-padding-desktop, 30px);
+  display: flex;
+  align-items: flex-end;
+  height: 386px;
+  background-color: $color-maya-blue;
+  background-repeat: no-repeat;
+  background-size: auto 386px;
+  background-position: top left;
+  max-width: 510px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, $color-transparent-4 50%, $color-tangaroa 100%);
+  }
+
+  @include vp-max {
+    @include hover {
+      padding: 28px clamp(5px, $catalog-item-hover-padding-desktop, 30px) 35px;
+      background: $color-tangaroa;
+      box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+      align-items: flex-start;
+      flex-direction: column;
+
+      &::before {
+        display: none;
+      }
+
+      h3 {
+        margin-bottom: 14px;
+      }
+
+      .catalog__item-info {
+        @include visually-hidden-off;
+        height: 282px;
+        overflow: auto;
+        max-width: 100%;
+      }
+
+      .catalog__item-list {
+        flex: auto;
+      }
+
+      a {
+        visibility: visible;
+      }
+    }
+  }
+
+  @include vp-1023 {
+    background-position: top left;
+    padding: 23px clamp(5px, $catalog-item-padding-desktop, 35px) 28px;
+
+    @include hover {
+      padding: 28px clamp(5px, $catalog-item-padding-tablet, 38px) 35px;
+      box-shadow: none;
+    }
+  }
+
+  @include vp-767 {
+    padding: 25px 25px 17px;
+    margin: 0 auto;
+    align-self: center;
+    width: 100%;
+    background-position: top left;
+
+    @include hover {
+      padding: 29px 25px 35px;
+    }
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-alice-blue;
+    position: relative;
+    z-index: 999;
+  }
+
+  &--astoria,
+  &--eline {
+    background-image:
+      image-set(
+        "../img/cruise-1.webp" 1x,
+        "../img/cruise-1.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-1@2x.webp" 2x,
+          "../img/cruise-1@2x.jpg" 2x
+        );
+    }
+
+    @include vp-1439 {
+      background-position: top left -166px;
+    }
+
+    @include vp-799 {
+      background-position: top left -143px;
+    }
+
+    @include vp-374 {
+      background-position: top left -163px;
+    }
+  }
+
+  &--atlantis {
+    background-image:
+      image-set(
+        "../img/cruise-3.webp" 1x,
+        "../img/cruise-3.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-3@2x.webp" 2x,
+          "../img/cruise-3@2x.jpg" 2x
+        );
+    }
+
+    @include vp-1439 {
+      background-position: top left -127px;
+    }
+
+    @include vp-799 {
+      background-position: top left -102px;
+    }
+
+    @include vp-374 {
+      background-position: top left -122px;
+    }
+  }
+
+  &--odissey {
+    background-image:
+      image-set(
+        "../img/cruise-4.webp" 1x,
+        "../img/cruise-4.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-4@2x.webp" 2x,
+          "../img/cruise-4@2x.jpg" 2x
+        );
+    }
+    background-size: auto 420px;
+
+    @include vp-1439 {
+      background-position: top left -119px;
+    }
+
+    @include vp-799 {
+      background-size: auto 455px;
+      background-position: top left -108px;
+    }
+
+    @include vp-374 {
+      background-size: 531px 455px;
+      background-position: top left -95px;
+    }
+  }
+
+  &--olympia {
+    background-image:
+      image-set(
+        "../img/cruise-5.webp" 1x,
+        "../img/cruise-5.jpg" 1x
+    );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-5@2x.webp" 2x,
+          "../img/cruise-5@2x.jpg" 2x
+        );
+    }
+    background-size: auto 415px;
+
+    @include vp-1439 {
+      background-position: top left -116px;
+    }
+
+    @include vp-799 {
+      background-size: auto 447px;
+      background-position: top left -143px;
+    }
+
+    @include vp-374 {
+      background-size: 524px 447px;
+      background-position: top left -127px;
+    }
+  }
+
+  &--aurora {
+    background-image:
+      image-set(
+        "../img/cruise-6.webp" 1x,
+        "../img/cruise-6.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-6@2x.webp" 2x,
+          "../img/cruise-6@2x.jpg" 2x
+        );
+    }
+
+    @include vp-1439 {
+      background-position: top left -107px;
+    }
+
+    @include vp-799 {
+      background-position: top left -103px;
+    }
+
+    @include vp-374 {
+      background-position: top left -122px;
+    }
+  }
+
+  &--leonor {
+    background-image:
+      image-set(
+        "../img/cruise-7.webp" 1x,
+        "../img/cruise-7.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-7@2x.webp" 2x,
+          "../img/cruise-7@2x.jpg" 2x
+        );
+    }
+
+    @include vp-1439 {
+      background-position: top left -146px;
+    }
+
+    @include vp-799 {
+      background-size: 613px 386px;
+      background-position: top left -175px;
+    }
+
+    @include vp-374 {
+      background-size: 534px 386px;
+      background-position: top left -152px;
+    }
+  }
+
+  &--minion-1 {
+    background-size: auto 522px;
+    background-image:
+      image-set(
+        "../img/cruise-8.webp" 1x,
+        "../img/cruise-8.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/cruise-8@2x.webp" 2x,
+          "../img/cruise-8@2x.jpg" 2x
+        );
+    }
+
+    @include vp-1439 {
+      background-position: top left -178px;
+    }
+
+    @include vp-799 {
+      background-size: 827px 522px;
+      background-position: top left -211px;
+    }
+
+    @include vp-374 {
+      background-size: 723px 522px;
+      background-position: top left -185px;
+    }
+  }
+}
+
+.catalog__item-info {
+  @include visually-hidden;
+
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  color: $color-alice-blue;
+
+  h4 {
+    padding: 0;
+    margin: 0 0 2px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  p {
+    padding: 0;
+    margin: 0 0 12px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    word-wrap: break-word;
+  }
+
+  a {
+    visibility: collapse;
+    outline-offset: -2px;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 9px 46px 10px 47px;
+    margin: 0;
+    background-color: $color-alice-blue;
+    color: $color-tangaroa;
+    justify-content: center;
+  }
+}
+
+
+.catalog__item-list {
+  padding: 0;
+  margin: 0;
+
+  h5 {
+    padding: 0;
+    margin: 0 0 2px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  p {
+    padding: 0;
+    margin: 0 0 11px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}

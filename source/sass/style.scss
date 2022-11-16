@@ -2,8 +2,6 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -13,13 +11,18 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
+@import "blocks/header";
+@import "blocks/description";
+@import "blocks/advantages";
+@import "blocks/catalog";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/footer";
 
 // ---------------------------------
 
