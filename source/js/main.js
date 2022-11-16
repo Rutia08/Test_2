@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {map} from './modules/ymap';
 
 // ---------------------------------
 
@@ -97,40 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
   mapImage.classList.add('visually-hidden');
 
   // яндекс-карта
-  /* eslint-disable */
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-      center: [59.938635, 30.323118],
-      zoom: 16,
-      controls: ['zoomControl', 'typeSelector',  'fullscreenControl', 'routeButtonControl']
-    }, {
-        searchControlProvider: 'yandex#search'
-    }),
-
-    // Создаём макет содержимого.
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
-
-    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Собственный значок метки',
-        balloonContent: 'Это красивая метка',
-    }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: '../img/svg/map-pin.svg',
-        // Размеры метки.
-        iconImageSize: [18, 22],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-5, -38],
-    });
-
-    myMap.geoObjects
-        .add(myPlacemark);
-  });
+  map();
 });
 
 // ---------------------------------

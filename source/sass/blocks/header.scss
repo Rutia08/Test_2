@@ -253,6 +253,7 @@
 
 [data-header].is-open {
   position: relative;
+  min-height: 500px;
 
   .header__menu {
     @include vp-767 {
@@ -325,7 +326,7 @@
     }
   }
 
-  .header_promo {
+  .header__promo {
     @include visually-hidden;
   }
 }
