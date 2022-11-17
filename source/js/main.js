@@ -16,15 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // mobile-menu
   let html = document.querySelector('[data-html]');
-  // let body = document.querySelector('[data-body]');
   let header = document.querySelector('[data-header]');
   let menuToggle = document.querySelector('[data-header-toggle]');
   let headerList = document.querySelector('[data-header-list]');
-  // let headerPromo = document.querySelector('[data-header-promo]');
 
   header.classList.add('is-js');
   html.style.setProperty('overflow-y', 'auto');
-  // headerPromo.style.setProperty('padding-top', '124px');
 
   menuToggle.onclick = () => {
     header.classList.toggle('is-open');

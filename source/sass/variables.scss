@@ -83,4 +83,4 @@ $catalog-item-hover-padding-desktop: percentage(calc(25 / 260));
 $catalog-width-mobile: percentage(calc(270 / 300));
 
 $header-width-mobile: 100 - percentage(calc(285 / 320));
-$header-mobile-gradient:             linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) $header-width-mobile, rgba(249, 251, 253, 1) $header-width-mobile);
+$header-mobile-gradient:             linear-gradient(90deg, rgba(0, 43, 102, 0.5) 0%, rgba(0, 43, 102, 0.5) $header-width-mobile, rgba(249, 251, 253, 1) $header-width-mobile);
