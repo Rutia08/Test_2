@@ -17,13 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
   // mobile-menu
   let html = document.querySelector('[data-html]');
   let header = document.querySelector('[data-header]');
+  let headerMenu = document.querySelector('[data-header-menu]');
   let menuToggle = document.querySelector('[data-header-toggle]');
   let headerList = document.querySelector('[data-header-list]');
 
   header.classList.add('is-js');
   html.style.setProperty('overflow-y', 'auto');
 
-  menuToggle.onclick = () => {
+
+  const menuChanger =() => {
     header.classList.toggle('is-open');
 
     if (html.style.getPropertyValue('overflow-y') === 'auto') {
@@ -31,7 +33,17 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
       html.style.setProperty('overflow-y', 'auto');
     }
+  }
+
+  menuToggle.onclick = () => {
+    menuChanger();
   };
+
+  header.addEventListener('click', e => {
+    if (e.target == header && header.classList.contains('is-open')) {
+      menuChanger();
+    }
+  })
 
   headerList.onclick = () => {
     header.classList.remove('is-open');
