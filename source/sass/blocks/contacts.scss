@@ -1,5 +1,5 @@
 .contacts__wrapper {
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 118px clamp(30px, $padding-desktop-2, 110px) 122px;
 
@@ -89,38 +89,48 @@
 
   span {
     display: block;
+    position: relative;
     padding-left: 28px;
     margin-bottom: 22px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 22px;
+      background: url("../img/svg/map-pin.svg") no-repeat;
+    }
   }
 
   a {
-    display: block;
+    display: inline-flex;
+    vertical-align: baseline;
     padding-left: 28px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background: url("../img/svg/phone.svg") no-repeat;
+    }
 
     @include hover {
       color: $color-maya-blue;
-
-      & + svg {
-        color: $color-maya-blue;
-      }
     }
   }
-
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    // transform: translateY(-50%);
-  }
 }
-
 
 .contacts__block {
   position: relative;
