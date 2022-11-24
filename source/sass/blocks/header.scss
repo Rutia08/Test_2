@@ -160,7 +160,7 @@
     line-height: 125%;
     color: $color-alice-blue;
 
-    @include hover {
+    &:hover {
       color: $color-maya-blue;
     }
 

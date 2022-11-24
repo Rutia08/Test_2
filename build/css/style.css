@@ -779,6 +779,10 @@ button,
   color: #f9fbfd;
 }
 
+.header__list-item a:hover {
+  color: #78bcfc;
+}
+
 .header__promo {
   margin: 0;
   padding: 198px clamp(35px, 10.4685212299%, 140px) 0;
@@ -1495,6 +1499,10 @@ input[type=checkbox]:invalid:focus + span::before {
   background: url("../img/svg/phone.svg") no-repeat;
 }
 
+.contacts__text a:hover {
+  color: #78bcfc;
+}
+
 .contacts__block {
   position: relative;
 }
@@ -1523,6 +1531,10 @@ input[type=checkbox]:invalid:focus + span::before {
 .footer__logo a {
   display: block;
   color: #f9fbfd;
+}
+
+.footer__logo a:hover {
+  color: #78bcfc;
 }
 
 .footer__logo svg {
@@ -1579,6 +1591,10 @@ input[type=checkbox]:invalid:focus + span::before {
   font-size: 16px;
   line-height: 125%;
   color: #f9fbfd;
+}
+
+.footer__list-item a:hover {
+  color: #78bcfc;
 }
 
 .footer__list-item--social a {
@@ -2559,22 +2575,6 @@ input[type=checkbox]:invalid:focus + span::before {
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
-  }
-
-  .header__list-item a:hover:not(.focus-visible) {
-    color: #78bcfc;
-  }
-
-  .contacts__text a:hover:not(.focus-visible) {
-    color: #78bcfc;
-  }
-
-  .footer__logo a:hover:not(.focus-visible) {
-    color: #78bcfc;
-  }
-
-  .footer__list-item a:hover:not(.focus-visible) {
-    color: #78bcfc;
   }
 }
 

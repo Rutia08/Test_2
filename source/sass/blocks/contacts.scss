@@ -126,7 +126,7 @@
       background: url("../img/svg/phone.svg") no-repeat;
     }
 
-    @include hover {
+    &:hover {
       color: $color-maya-blue;
     }
   }
