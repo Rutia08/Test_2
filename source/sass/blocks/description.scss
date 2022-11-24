@@ -3,7 +3,7 @@
 }
 
 .description__wrapper {
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 120px clamp(30px, $padding-desktop-2, 110px) 145px;
   display: grid;
@@ -74,11 +74,10 @@
 
 .description__picture {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   @include vp-1023 {
-    align-items: flex-start;
     margin: 9px 5px 0 0;
   }
 

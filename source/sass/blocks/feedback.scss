@@ -65,10 +65,10 @@
 
 .feedback__wrapper {
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1366px;
   padding: 50px clamp(30px, $padding-desktop-feedback, 220px) 50px;
   display: grid;
-  grid-template-columns: 1fr 38.75%;
+  grid-template-columns: 1fr 403px;
   gap: 5%;
 
   @include vp-1023 {

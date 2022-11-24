@@ -1,5 +1,5 @@
 .catalog__wrapper {
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 85px clamp(30px, $padding-desktop-2, 110px) 120px;
   display: flex;
@@ -76,7 +76,8 @@
   }
 
   @include vp-max {
-    @include hover {
+    &:hover,
+    &:focus-within {
       padding: 28px clamp(5px, $catalog-item-hover-padding-desktop, 30px) 35px;
       background: $color-tangaroa;
       box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
@@ -112,7 +113,7 @@
     background-position: top left;
     padding: 23px clamp(5px, $catalog-item-padding-desktop, 35px) 28px;
 
-    @include hover {
+    &:hover {
       padding: 28px clamp(5px, $catalog-item-padding-tablet, 38px) 35px;
       box-shadow: none;
     }
@@ -125,7 +126,7 @@
     width: 100%;
     background-position: top left;
 
-    @include hover {
+    &:hover {
       padding: 29px 25px 35px;
     }
   }
@@ -376,7 +377,7 @@
   }
 
   a {
-    visibility: collapse;
+    visibility: visible;
     outline-offset: -2px;
     display: flex;
     font-weight: 600;

@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // mobile-menu
   let html = document.querySelector('[data-html]');
   let header = document.querySelector('[data-header]');
-  let headerMenu = document.querySelector('[data-header-menu]');
   let menuToggle = document.querySelector('[data-header-toggle]');
   let headerList = document.querySelector('[data-header-list]');
 
@@ -25,25 +24,24 @@ window.addEventListener('DOMContentLoaded', () => {
   html.style.setProperty('overflow-y', 'auto');
 
 
-  const menuChanger =() => {
+  const menuChanger = () => {
     header.classList.toggle('is-open');
-
     if (html.style.getPropertyValue('overflow-y') === 'auto') {
       html.style.setProperty('overflow-y', 'hidden');
     } else {
       html.style.setProperty('overflow-y', 'auto');
     }
-  }
+  };
 
   menuToggle.onclick = () => {
     menuChanger();
   };
 
-  header.addEventListener('click', e => {
-    if (e.target == header && header.classList.contains('is-open')) {
+  header.addEventListener('click', (e) => {
+    if (e.target === header && header.classList.contains('is-open')) {
       menuChanger();
     }
-  })
+  });
 
   headerList.onclick = () => {
     header.classList.remove('is-open');
@@ -63,19 +61,45 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  inputPhone.oninput = () => {
-    if (inputPhone.value.length < 11) {
-      inputPhone.classList.add('is-invalid');
-    } else {
-      inputPhone.classList.remove('is-invalid');
+  let keyPressHandler1 = (evt) => {
+    if (evt.keyCode !== 43) {
+      if (evt.keyCode < 47 || evt.keyCode > 57) {
+        evt.preventDefault();
+      }
     }
   };
 
-  inputPhone.addEventListener('keypress', (evt) => {
+  let keyPressHandler2 = (evt) => {
     if (evt.keyCode < 47 || evt.keyCode > 57) {
       evt.preventDefault();
     }
-  });
+  };
+
+  inputPhone.addEventListener('keypress', keyPressHandler1);
+
+  inputPhone.oninput = () => {
+    if (inputPhone.value.length > 0) {
+      inputPhone.addEventListener('keypress', keyPressHandler2);
+      inputPhone.removeEventListener('keypress', keyPressHandler1);
+    } else {
+      inputPhone.addEventListener('keypress', keyPressHandler1);
+      inputPhone.removeEventListener('keypress', keyPressHandler2);
+    }
+
+    if (inputPhone.value[0] === '+') {
+      if (inputPhone.value.length < 12) {
+        inputPhone.classList.add('is-invalid');
+      } else {
+        inputPhone.classList.remove('is-invalid');
+      }
+    } else {
+      if (inputPhone.value.length < 11) {
+        inputPhone.classList.add('is-invalid');
+      } else {
+        inputPhone.classList.remove('is-invalid');
+      }
+    }
+  };
 
   inputName.oninput = () => {
     if (inputName.value.length < 2) {
@@ -93,12 +117,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
-  });
-
   // map
   let mapImage = document.querySelector('[data-img-map]');
   let mapYandex = document.querySelector('[data-map]');
@@ -108,6 +126,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // яндекс-карта
   map();
+
+  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
+  // в load следует добавить скрипты, не участвующие в работе первого экрана
+  window.addEventListener('load', () => {
+    initModals();
+  });
 });
 
 // ---------------------------------

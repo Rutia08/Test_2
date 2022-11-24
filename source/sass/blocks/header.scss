@@ -19,12 +19,18 @@
   background-position: top -188px left;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 4px 4px $color-transparent-2;
 
   @include vp-1366 {
     background-size: 1366px;
   }
 
+  @include vp-1023 {
+    box-shadow: none;
+  }
+
   @include vp-799 {
+
     background-position: top left -41px;
     background-size: 850px;
   }
@@ -44,12 +50,10 @@
 .header__wrapper {
   padding: 35px clamp(30px, $padding-desktop, 110px) 277px;
   margin: 0 auto;
-  max-width: 1920px;
-  box-shadow: 0 8px 4px -4px $color-transparent-2;
+  max-width: 1366px;
 
   @include vp-1023 {
     padding: 30px clamp(10px, $padding-tablet, 45px) 275px;
-    box-shadow: none;
   }
 
   @include vp-767 {
