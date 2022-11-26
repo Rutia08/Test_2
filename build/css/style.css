@@ -973,6 +973,7 @@ button,
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  width: clamp(190px, 19.0336749634vw, 260px);
   height: clamp(280px, 28.2576866764vw, 386px);
   background-color: #78bcfc;
   background-repeat: no-repeat;
@@ -1843,6 +1844,7 @@ input[type=checkbox]:invalid:focus + span::before {
   }
 
   .catalog__item {
+    width: clamp(309px, 40.234375vw, 420px);
     height: clamp(386px, 50.2604166667vw, 520px);
     padding: 23px clamp(5px, 11.5384615385%, 35px) 28px;
   }
@@ -2332,13 +2334,13 @@ input[type=checkbox]:invalid:focus + span::before {
 
   .catalog__item {
     max-width: 500px;
-    height: clamp(386px, 120.625vw, 693px);
+    width: clamp(270px, 84.375vw, 500px);
+    height: clamp(386px, 120.625vw, 715px);
     padding: 25px 25px 17px;
     margin: 0 auto;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    width: 100%;
   }
 
   .catalog__item:hover {

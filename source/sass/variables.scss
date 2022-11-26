@@ -88,6 +88,13 @@ $catalog-card-height-desktop: calc(($card-height/1366) * 100vw);
 $catalog-card-height-tablet: calc(($card-height/768) * 100vw);
 $catalog-card-height-mobile: calc(($card-height/320) * 100vw);
 
+$card-width-desktop: 260;
+$catalog-card-width-desktop: calc(($card-width-desktop/1366) * 100vw);
+$card-width-tablet: 309;
+$catalog-card-width-tablet: calc(($card-width-tablet/768) * 100vw);
+$card-width-mobile: 270;
+$catalog-card-width-mobile: calc(($card-width-mobile/320) * 100vw);
+
 $header-width-mobile: 100 - percentage(calc(285 / 320));
 $header-width-mobile-2: percentage(calc(285 / 320));
 $header-mobile-gradient:             linear-gradient(90deg, rgba(0, 43, 102, 0.5) 0%, rgba(0, 43, 102, 0.5) $header-width-mobile, rgba(249, 251, 253, 1) $header-width-mobile);
