@@ -7,18 +7,20 @@
   background-size: cover;
   box-shadow: 0 4px 4px $color-transparent-2;
 
-  background-image:
-    image-set(
-      "../img/background/header-1.webp" 1x,
-      "../img/background/header-1.jpg" 1x
-    );
-
-  @include retina {
+  @include vp-max {
     background-image:
       image-set(
-        "../img/background/header-1@2x.webp" 2x,
-        "../img/background/header-1@2x.jpg" 2x
+        "../img/background/header-1.webp" 1x,
+        "../img/background/header-1.jpg" 1x
       );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/background/header-1@2x.webp" 2x,
+          "../img/background/header-1@2x.jpg" 2x
+        );
+    }
   }
 
   @include vp-1023 {
@@ -355,6 +357,10 @@
     a {
       justify-content: flex-start;
       color: $color-tangaroa;
+
+      &:hover {
+        color: $color-maya-blue;
+      }
     }
 
     .header__promo {

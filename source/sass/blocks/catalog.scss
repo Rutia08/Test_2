@@ -144,18 +144,20 @@
   }
 
   &--astoria {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-1-1.webp" 1x,
-        "../img/catalog/cruise-1-1.jpg" 1x
-      );
-
-    @include retina {
+    @include vp-max {
       background-image:
         image-set(
-          "../img/catalog/cruise-1-1@2x.webp" 2x,
-          "../img/catalog/cruise-1-1@2x.jpg" 2x
+          "../img/catalog/cruise-1-1.webp" 1x,
+          "../img/catalog/cruise-1-1.jpg" 1x
         );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-1-1@2x.webp" 2x,
+            "../img/catalog/cruise-1-1@2x.jpg" 2x
+          );
+      }
     }
 
     @include vp-1023 {
@@ -192,18 +194,20 @@
   }
 
   &--eline {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-2-1.webp" 1x,
-        "../img/catalog/cruise-2-1.jpg" 1x
-      );
-
-    @include retina {
+    @include vp-max {
       background-image:
         image-set(
-          "../img/catalog/cruise-2-1@2x.webp" 2x,
-          "../img/catalog/cruise-2-1@2x.jpg" 2x
+          "../img/catalog/cruise-2-1.webp" 1x,
+          "../img/catalog/cruise-2-1.jpg" 1x
         );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-2-1@2x.webp" 2x,
+            "../img/catalog/cruise-2-1@2x.jpg" 2x
+          );
+      }
     }
 
     @include vp-1023 {
@@ -240,18 +244,20 @@
   }
 
   &--atlantis {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-3-1.webp" 1x,
-        "../img/catalog/cruise-3-1.jpg" 1x
-      );
-
-    @include retina {
+    @include vp-max {
       background-image:
         image-set(
-          "../img/catalog/cruise-3-1@2x.webp" 2x,
-          "../img/catalog/cruise-3-1@2x.jpg" 2x
+          "../img/catalog/cruise-3-1.webp" 1x,
+          "../img/catalog/cruise-3-1.jpg" 1x
         );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-3-1@2x.webp" 2x,
+            "../img/catalog/cruise-3-1@2x.jpg" 2x
+          );
+      }
     }
 
     @include vp-1023 {
@@ -288,11 +294,12 @@
   }
 
   &--odissey {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-4-1.webp" 1x,
-        "../img/catalog/cruise-4-1.jpg" 1x
-      );
+    @include vp-max {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-4-1.webp" 1x,
+          "../img/catalog/cruise-4-1.jpg" 1x
+        );
 
     @include retina {
       background-image:
@@ -301,6 +308,8 @@
           "../img/catalog/cruise-4-1@2x.jpg" 2x
         );
     }
+    }
+
 
     @include vp-1023 {
       background-image:
@@ -336,18 +345,20 @@
   }
 
   &--olympia {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-5-1.webp" 1x,
-        "../img/catalog/cruise-5-1.jpg" 1x
-      );
-
-    @include retina {
-      background-image:
-        image-set(
-          "../img/catalog/cruise-5-1@2x.webp" 2x,
-          "../img/catalog/cruise-5-1@2x.jpg" 2x
+    @include vp-max {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-5-1.webp" 1x,
+            "../img/catalog/cruise-5-1.jpg" 1x
         );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-5-1@2x.webp" 2x,
+            "../img/catalog/cruise-5-1@2x.jpg" 2x
+          );
+      }
     }
 
     @include vp-1023 {
@@ -384,18 +395,20 @@
   }
 
   &--aurora {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-6-1.webp" 1x,
-        "../img/catalog/cruise-6-1.jpg" 1x
-      );
-
-    @include retina {
+    @include vp-max {
       background-image:
         image-set(
-          "../img/catalog/cruise-6-1@2x.webp" 2x,
-          "../img/catalog/cruise-6-1@2x.jpg" 2x
+          "../img/catalog/cruise-6-1.webp" 1x,
+          "../img/catalog/cruise-6-1.jpg" 1x
         );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-6-1@2x.webp" 2x,
+            "../img/catalog/cruise-6-1@2x.jpg" 2x
+          );
+      }
     }
 
     @include vp-1023 {
@@ -432,18 +445,20 @@
   }
 
   &--leonor {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-7-1.webp" 1x,
-        "../img/catalog/cruise-7-1.jpg" 1x
-      );
-
-    @include retina {
+    @include vp-max {
       background-image:
         image-set(
-          "../img/catalog/cruise-7-1@2x.webp" 2x,
-          "../img/catalog/cruise-7-1@2x.jpg" 2x
+          "../img/catalog/cruise-7-1.webp" 1x,
+          "../img/catalog/cruise-7-1.jpg" 1x
         );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-7-1@2x.webp" 2x,
+            "../img/catalog/cruise-7-1@2x.jpg" 2x
+          );
+      }
     }
 
     @include vp-1023 {
@@ -480,18 +495,20 @@
   }
 
   &--minion-1 {
-    background-image:
-      image-set(
-        "../img/catalog/cruise-8-1.webp" 1x,
-        "../img/catalog/cruise-8-1.jpg" 1x
-      );
-
-    @include retina {
+    @include vp-max {
       background-image:
         image-set(
-          "../img/catalog/cruise-8-1@2x.webp" 2x,
-          "../img/catalog/cruise-8-1@2x.jpg" 2x
+          "../img/catalog/cruise-8-1.webp" 1x,
+          "../img/catalog/cruise-8-1.jpg" 1x
         );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-8-1@2x.webp" 2x,
+            "../img/catalog/cruise-8-1@2x.jpg" 2x
+          );
+      }
     }
 
     @include vp-1023 {
