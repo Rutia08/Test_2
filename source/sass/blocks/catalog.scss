@@ -57,6 +57,7 @@
   padding: 23px clamp(5px, $catalog-item-padding-desktop, 30px);
   display: flex;
   align-items: flex-end;
+  width: clamp(190px, $catalog-card-width-desktop, 260px);
   height: clamp(280px, $catalog-card-height-desktop, 386px);
   background-color: $color-maya-blue;
   background-repeat: no-repeat;
@@ -108,6 +109,7 @@
 
 
   @include vp-1023 {
+    width: clamp(309px, $catalog-card-width-tablet, 420px);
     height: clamp(386px, $catalog-card-height-tablet, 520px);
     padding: 23px clamp(5px, $catalog-item-padding-desktop, 35px) 28px;
 
@@ -119,11 +121,11 @@
 
   @include vp-767 {
     max-width: 500px;
-    height: clamp(386px, $catalog-card-height-mobile, 693px);
+    width: clamp(270px, $catalog-card-width-mobile, 500px);
+    height: clamp(386px, $catalog-card-height-mobile, 715px);
     padding: 25px 25px 17px;
     margin: 0 auto;
     align-self: center;
-    width: 100%;
 
     &:hover {
       padding: 29px 25px 35px;
