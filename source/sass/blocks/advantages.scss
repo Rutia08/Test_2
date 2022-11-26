@@ -4,18 +4,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  background-image:
-    image-set(
-      "../img/background/advantages-1.webp" 1x,
-      "../img/background/advantages-1.jpg" 1x
-    );
-
-  @include retina {
+  @include vp-max {
     background-image:
       image-set(
-        "../img/background/advantages-1@2x.webp" 2x,
-        "../img/background/advantages-1@2x.jpg" 2x
+        "../img/background/advantages-1.webp" 1x,
+        "../img/background/advantages-1.jpg" 1x
       );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/background/advantages-1@2x.webp" 2x,
+          "../img/background/advantages-1@2x.jpg" 2x
+        );
+    }
   }
 
   @include vp-1023 {
