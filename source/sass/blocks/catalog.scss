@@ -1,7 +1,7 @@
 .catalog__wrapper {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 85px clamp(30px, $padding-desktop-2, 110px) 120px;
+  padding: 85px clamp(30px, $padding-desktop-2, 103px) 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,12 +57,11 @@
   padding: 23px clamp(5px, $catalog-item-padding-desktop, 30px);
   display: flex;
   align-items: flex-end;
-  height: 386px;
+  height: clamp(280px, $catalog-card-height-desktop, 386px);
   background-color: $color-maya-blue;
   background-repeat: no-repeat;
-  background-size: auto 386px;
+  background-size: cover;
   background-position: top left;
-  max-width: 510px;
   position: relative;
 
   &::before {
@@ -75,42 +74,41 @@
     background: linear-gradient(180deg, $color-transparent-4 50%, $color-tangaroa 100%);
   }
 
-  @include vp-max {
-    &:hover,
-    &:focus-within {
-      padding: 28px clamp(5px, $catalog-item-hover-padding-desktop, 30px) 35px;
-      background: $color-tangaroa;
-      box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
-      align-items: flex-start;
-      flex-direction: column;
+  &:hover,
+  &:focus-within {
+    padding: 28px clamp(5px, $catalog-item-hover-padding-desktop, 30px) 35px;
+    background: $color-tangaroa;
+    box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+    align-items: flex-start;
+    flex-direction: column;
 
-      &::before {
-        display: none;
-      }
+    &::before {
+      display: none;
+    }
 
-      h3 {
-        margin-bottom: 14px;
-      }
+    h3 {
+      margin-bottom: 14px;
+    }
 
-      .catalog__item-info {
-        @include visually-hidden-off;
-        height: 282px;
-        overflow: auto;
-        max-width: 100%;
-      }
+    .catalog__item-info {
+      @include visually-hidden-off;
+      height: 282px;
+      overflow: auto;
+      max-width: 100%;
+    }
 
-      .catalog__item-list {
-        flex: auto;
-      }
+    .catalog__item-list {
+      flex: auto;
+    }
 
-      a {
-        visibility: visible;
-      }
+    a {
+      visibility: visible;
     }
   }
 
+
   @include vp-1023 {
-    background-position: top left;
+    height: clamp(386px, $catalog-card-height-tablet, 520px);
     padding: 23px clamp(5px, $catalog-item-padding-desktop, 35px) 28px;
 
     &:hover {
@@ -120,11 +118,12 @@
   }
 
   @include vp-767 {
+    max-width: 500px;
+    height: clamp(386px, $catalog-card-height-mobile, 693px);
     padding: 25px 25px 17px;
     margin: 0 auto;
     align-self: center;
     width: 100%;
-    background-position: top left;
 
     &:hover {
       padding: 29px 25px 35px;
@@ -142,211 +141,387 @@
     z-index: 999;
   }
 
-  &--astoria,
-  &--eline {
+  &--astoria {
     background-image:
       image-set(
-        "../img/cruise-1.webp" 1x,
-        "../img/cruise-1.jpg" 1x
+        "../img/catalog/cruise-1-1.webp" 1x,
+        "../img/catalog/cruise-1-1.jpg" 1x
       );
 
     @include retina {
       background-image:
         image-set(
-          "../img/cruise-1@2x.webp" 2x,
-          "../img/cruise-1@2x.jpg" 2x
+          "../img/catalog/cruise-1-1@2x.webp" 2x,
+          "../img/catalog/cruise-1-1@2x.jpg" 2x
         );
     }
 
-    @include vp-1439 {
-      background-position: top left -166px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-1-2.webp" 1x,
+          "../img/catalog/cruise-1-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-1-2@2x.webp" 2x,
+            "../img/catalog/cruise-1-2@2x.jpg" 2x
+          );
+      }
     }
 
-    @include vp-799 {
-      background-position: top left -143px;
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-1-3.webp" 1x,
+          "../img/catalog/cruise-1-3.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-1-3@2x.webp" 2x,
+            "../img/catalog/cruise-1-3@2x.jpg" 2x
+          );
+      }
+    }
+  }
+
+  &--eline {
+    background-image:
+      image-set(
+        "../img/catalog/cruise-2-1.webp" 1x,
+        "../img/catalog/cruise-2-1.jpg" 1x
+      );
+
+    @include retina {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-2-1@2x.webp" 2x,
+          "../img/catalog/cruise-2-1@2x.jpg" 2x
+        );
     }
 
-    @include vp-374 {
-      background-position: top left -163px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-2-2.webp" 1x,
+          "../img/catalog/cruise-2-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-2-2@2x.webp" 2x,
+            "../img/catalog/cruise-2-2@2x.jpg" 2x
+          );
+      }
+    }
+
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-2-3.webp" 1x,
+          "../img/catalog/cruise-2-3.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-2-3@2x.webp" 2x,
+            "../img/catalog/cruise-2-3@2x.jpg" 2x
+          );
+      }
     }
   }
 
   &--atlantis {
     background-image:
       image-set(
-        "../img/cruise-3.webp" 1x,
-        "../img/cruise-3.jpg" 1x
+        "../img/catalog/cruise-3-1.webp" 1x,
+        "../img/catalog/cruise-3-1.jpg" 1x
       );
 
     @include retina {
       background-image:
         image-set(
-          "../img/cruise-3@2x.webp" 2x,
-          "../img/cruise-3@2x.jpg" 2x
+          "../img/catalog/cruise-3-1@2x.webp" 2x,
+          "../img/catalog/cruise-3-1@2x.jpg" 2x
         );
     }
 
-    @include vp-1439 {
-      background-position: top left -127px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-3-2.webp" 1x,
+          "../img/catalog/cruise-3-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-3-2@2x.webp" 2x,
+            "../img/catalog/cruise-3-2@2x.jpg" 2x
+          );
+      }
     }
 
-    @include vp-799 {
-      background-position: top left -102px;
-    }
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-3-3.webp" 1x,
+          "../img/catalog/cruise-3-3.jpg" 1x
+        );
 
-    @include vp-374 {
-      background-position: top left -122px;
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-3-3@2x.webp" 2x,
+            "../img/catalog/cruise-3-3@2x.jpg" 2x
+          );
+      }
     }
   }
 
   &--odissey {
     background-image:
       image-set(
-        "../img/cruise-4.webp" 1x,
-        "../img/cruise-4.jpg" 1x
+        "../img/catalog/cruise-4-1.webp" 1x,
+        "../img/catalog/cruise-4-1.jpg" 1x
       );
 
     @include retina {
       background-image:
         image-set(
-          "../img/cruise-4@2x.webp" 2x,
-          "../img/cruise-4@2x.jpg" 2x
+          "../img/catalog/cruise-4-1@2x.webp" 2x,
+          "../img/catalog/cruise-4-1@2x.jpg" 2x
         );
     }
-    background-size: auto 420px;
 
-    @include vp-1439 {
-      background-position: top left -119px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-4-2.webp" 1x,
+          "../img/catalog/cruise-4-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-4-2@2x.webp" 2x,
+            "../img/catalog/cruise-4-2@2x.jpg" 2x
+          );
+      }
     }
 
-    @include vp-799 {
-      background-size: auto 455px;
-      background-position: top left -108px;
-    }
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-4-3.webp" 1x,
+          "../img/catalog/cruise-4-3.jpg" 1x
+        );
 
-    @include vp-374 {
-      background-size: 531px 455px;
-      background-position: top left -95px;
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-4-3@2x.webp" 2x,
+            "../img/catalog/cruise-4-3@2x.jpg" 2x
+          );
+      }
     }
   }
 
   &--olympia {
     background-image:
       image-set(
-        "../img/cruise-5.webp" 1x,
-        "../img/cruise-5.jpg" 1x
-    );
+        "../img/catalog/cruise-5-1.webp" 1x,
+        "../img/catalog/cruise-5-1.jpg" 1x
+      );
 
     @include retina {
       background-image:
         image-set(
-          "../img/cruise-5@2x.webp" 2x,
-          "../img/cruise-5@2x.jpg" 2x
+          "../img/catalog/cruise-5-1@2x.webp" 2x,
+          "../img/catalog/cruise-5-1@2x.jpg" 2x
         );
     }
-    background-size: auto 415px;
 
-    @include vp-1439 {
-      background-position: top left -116px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-5-2.webp" 1x,
+          "../img/catalog/cruise-5-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-5-2@2x.webp" 2x,
+            "../img/catalog/cruise-5-2@2x.jpg" 2x
+          );
+      }
     }
 
-    @include vp-799 {
-      background-size: auto 447px;
-      background-position: top left -143px;
-    }
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-5-3.webp" 1x,
+          "../img/catalog/cruise-5-3.jpg" 1x
+        );
 
-    @include vp-374 {
-      background-size: 524px 447px;
-      background-position: top left -127px;
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-5-3@2x.webp" 2x,
+            "../img/catalog/cruise-5-3@2x.jpg" 2x
+          );
+      }
     }
   }
 
   &--aurora {
     background-image:
       image-set(
-        "../img/cruise-6.webp" 1x,
-        "../img/cruise-6.jpg" 1x
+        "../img/catalog/cruise-6-1.webp" 1x,
+        "../img/catalog/cruise-6-1.jpg" 1x
       );
 
     @include retina {
       background-image:
         image-set(
-          "../img/cruise-6@2x.webp" 2x,
-          "../img/cruise-6@2x.jpg" 2x
+          "../img/catalog/cruise-6-1@2x.webp" 2x,
+          "../img/catalog/cruise-6-1@2x.jpg" 2x
         );
     }
 
-    @include vp-1439 {
-      background-position: top left -107px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-6-2.webp" 1x,
+          "../img/catalog/cruise-6-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-6-2@2x.webp" 2x,
+            "../img/catalog/cruise-6-2@2x.jpg" 2x
+          );
+      }
     }
 
-    @include vp-799 {
-      background-position: top left -103px;
-    }
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-6-3.webp" 1x,
+          "../img/catalog/cruise-6-3.jpg" 1x
+        );
 
-    @include vp-374 {
-      background-position: top left -122px;
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-6-3@2x.webp" 2x,
+            "../img/catalog/cruise-6-3@2x.jpg" 2x
+          );
+      }
     }
   }
 
   &--leonor {
     background-image:
       image-set(
-        "../img/cruise-7.webp" 1x,
-        "../img/cruise-7.jpg" 1x
+        "../img/catalog/cruise-7-1.webp" 1x,
+        "../img/catalog/cruise-7-1.jpg" 1x
       );
 
     @include retina {
       background-image:
         image-set(
-          "../img/cruise-7@2x.webp" 2x,
-          "../img/cruise-7@2x.jpg" 2x
+          "../img/catalog/cruise-7-1@2x.webp" 2x,
+          "../img/catalog/cruise-7-1@2x.jpg" 2x
         );
     }
 
-    @include vp-1439 {
-      background-position: top left -146px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-7-2.webp" 1x,
+          "../img/catalog/cruise-7-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-7-2@2x.webp" 2x,
+            "../img/catalog/cruise-7-2@2x.jpg" 2x
+          );
+      }
     }
 
-    @include vp-799 {
-      background-size: 613px 386px;
-      background-position: top left -175px;
-    }
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-7-3.webp" 1x,
+          "../img/catalog/cruise-7-3.jpg" 1x
+        );
 
-    @include vp-374 {
-      background-size: 534px 386px;
-      background-position: top left -152px;
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-7-3@2x.webp" 2x,
+            "../img/catalog/cruise-7-3@2x.jpg" 2x
+          );
+      }
     }
   }
 
   &--minion-1 {
-    background-size: auto 522px;
     background-image:
       image-set(
-        "../img/cruise-8.webp" 1x,
-        "../img/cruise-8.jpg" 1x
+        "../img/catalog/cruise-8-1.webp" 1x,
+        "../img/catalog/cruise-8-1.jpg" 1x
       );
 
     @include retina {
       background-image:
         image-set(
-          "../img/cruise-8@2x.webp" 2x,
-          "../img/cruise-8@2x.jpg" 2x
+          "../img/catalog/cruise-8-1@2x.webp" 2x,
+          "../img/catalog/cruise-8-1@2x.jpg" 2x
         );
     }
 
-    @include vp-1439 {
-      background-position: top left -178px;
+    @include vp-1023 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-8-2.webp" 1x,
+          "../img/catalog/cruise-8-2.jpg" 1x
+        );
+
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-8-2@2x.webp" 2x,
+            "../img/catalog/cruise-8-2@2x.jpg" 2x
+          );
+      }
     }
 
-    @include vp-799 {
-      background-size: 827px 522px;
-      background-position: top left -211px;
-    }
+    @include vp-767 {
+      background-image:
+        image-set(
+          "../img/catalog/cruise-8-3.webp" 1x,
+          "../img/catalog/cruise-8-3.jpg" 1x
+        );
 
-    @include vp-374 {
-      background-size: 723px 522px;
-      background-position: top left -185px;
+      @include retina {
+        background-image:
+          image-set(
+            "../img/catalog/cruise-8-3@2x.webp" 2x,
+            "../img/catalog/cruise-8-3@2x.jpg" 2x
+          );
+      }
     }
   }
 }

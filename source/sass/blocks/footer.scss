@@ -5,7 +5,7 @@
 .footer__wrapper {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 50px clamp(30px, $padding-desktop-2, 110px);
+  padding: 52px clamp(30px, $padding-desktop-2, 103px) 48px;
   display: flex;
   justify-content: space-between;
 
@@ -14,7 +14,7 @@
   }
 
   @include vp-767 {
-    padding: 40px clamp(15px, $padding-mobile, 30px) 32px;
+    padding: 40px clamp(15px, $padding-mobile, 30px) 30px;
     flex-direction: column;
   }
 }
@@ -22,6 +22,7 @@
 .footer__logo {
   min-width: 70px;
   margin-right: 22px;
+  margin-top: -2px;
 
   @include vp-1023 {
     min-width: 38px;
@@ -74,21 +75,27 @@
   }
 
   @include vp-767 {
-    min-width: 280px;
+    min-width: auto;
+    margin: 0 -10px;
   }
 }
 
 .footer__social {
   display: flex;
   flex-wrap: wrap;
-  min-width: 120px;
+  min-width: 150px;
+  margin: 0 -17px 0 0;
+  justify-content: flex-end;
 
   @include vp-1023 {
-    min-width: 90px;
+    min-width: 100px;
+    margin: 0;
   }
 
   @include vp-767 {
+    margin: 0 -10px;
     justify-content: center;
+    min-width: auto;
   }
 
   @include vp-374 {
@@ -104,12 +111,15 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 6px;
+    align-items: center;
+  }
+
+  @include vp-374 {
+    align-items: flex-start;
   }
 
   &--social {
-    margin: 0 -17px 0 0;
-    max-width: 410px;
-    min-width: 120px;
+    justify-content: flex-end;
 
     @include vp-1023 {
       margin: 0 -15px 0 0;
@@ -123,21 +133,15 @@
     }
 
     @include vp-374 {
-      margin-left: -5px;
       justify-content: flex-start;
     }
   }
 }
 
 .footer__list-item {
-  display: flex;
-  align-content: center;
-
-  @include vp-767 {
-    width: 100%;
-  }
-
   a {
+    display: inline-flex;
+    vertical-align: baseline;
     padding: 9px 14px;
     margin: 0 3px;
     font-weight: 500;
@@ -155,13 +159,11 @@
     }
 
     @include vp-767 {
-      padding: 9px 7px 8px 11px;
+      padding: 9px 7px 8px;
       width: 100%;
-      text-align: center;
     }
 
     @include vp-374 {
-      margin-left: -10px;
       text-align: left;
     }
   }
@@ -173,14 +175,16 @@
 
     a {
       padding: 10px 9px 9px 9px;
-      display: inline-flex;
-      vertical-align: baseline;
       line-height: 12px;
       margin: 0 9px 0 0;
 
       @include vp-1023 {
         margin: 4px 10px 0 0;
         padding: 5px 4px 4px 4px;
+      }
+
+      @include vp-374 {
+        margin: 4px 4px 0 0;
       }
     }
 
