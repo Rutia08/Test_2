@@ -83,6 +83,11 @@ $catalog-item-padding-tablet: percentage(calc(35 / 309));
 $catalog-item-hover-padding-desktop: percentage(calc(25 / 260));
 $catalog-width-mobile: percentage(calc(270 / 300));
 
+$card-height: 386;
+$catalog-card-height-desktop: calc(($card-height/1366) * 100vw);
+$catalog-card-height-tablet: calc(($card-height/768) * 100vw);
+$catalog-card-height-mobile: calc(($card-height/320) * 100vw);
+
 $header-width-mobile: 100 - percentage(calc(285 / 320));
 $header-width-mobile-2: percentage(calc(285 / 320));
 $header-mobile-gradient:             linear-gradient(90deg, rgba(0, 43, 102, 0.5) 0%, rgba(0, 43, 102, 0.5) $header-width-mobile, rgba(249, 251, 253, 1) $header-width-mobile);
