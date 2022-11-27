@@ -37,13 +37,6 @@
 }
 
 // Desktop first
-
-@mixin vp-max {
-  @media (max-width: 10000px) {
-    @content;
-  }
-}
-
 @mixin vp-1919 {
   @media (max-width: ($vp-1920 - 1px)) {
     @content;
@@ -153,10 +146,8 @@
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 0;
   overflow: visible;
   white-space: normal;
-  border: 0;
   clip: auto;
   clip-path: inset(0);
 }
