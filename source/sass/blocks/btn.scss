@@ -2,27 +2,19 @@
   display: inline-flex;
   vertical-align: baseline;
   padding: 10px 20px;
-
   color: $color-default-black;
-
   background-color: $color-alice-blue;
   border: none;
   cursor: pointer;
   user-select: none;
-
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
-  @include hover-focus {
+  &:hover {
     opacity: 0.8;
   }
 }
