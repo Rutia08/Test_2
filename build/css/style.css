@@ -1221,7 +1221,7 @@ button,
   display: none;
 }
 
-.feedback__info h3 {
+.feedback__info h2 {
   padding: 0;
   margin: 0 0 8px 0;
   font-weight: 700;
@@ -1912,7 +1912,7 @@ input[type=checkbox]:invalid:focus + span::before {
     padding: 0 0 52px 0;
   }
 
-  .feedback__info h3 {
+  .feedback__info h2 {
     margin: 0 0 5px 0;
     font-size: 34px;
   }
@@ -2349,7 +2349,7 @@ input[type=checkbox]:invalid:focus + span::before {
     display: none;
   }
 
-  .feedback__info h3 {
+  .feedback__info h2 {
     margin: 0 0 13px 0;
     font-size: 24px;
     line-height: 130%;
