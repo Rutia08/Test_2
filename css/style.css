@@ -674,16 +674,12 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.btn--red {
-  background-color: #ff1553;
-}
-
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.btn.focus-visible:focus {
+.btn:hover {
   opacity: 0.8;
 }
 
@@ -696,8 +692,8 @@ button,
   background-size: cover;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  background-image: -webkit-image-set(url("../img/background/header-1.webp") 1x, url("../img/background/header-1.jpg") 1x);
-  background-image: image-set("../img/background/header-1.webp" 1x, "../img/background/header-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/background/header-1.webp") 1x, url("../img/background/header-1.jpg") 1x, url("../img/background/header-1@2x.webp") 2x, url("../img/background/header-1@2x.jpg") 2x);
+  background-image: image-set("../img/background/header-1.webp" 1x, "../img/background/header-1.jpg" 1x, "../img/background/header-1@2x.webp" 2x, "../img/background/header-1@2x.jpg" 2x);
 }
 
 .header__wrapper {
@@ -868,8 +864,8 @@ button,
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-image-set(url("../img/background/advantages-1.webp") 1x, url("../img/background/advantages-1.jpg") 1x);
-  background-image: image-set("../img/background/advantages-1.webp" 1x, "../img/background/advantages-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/background/advantages-1.webp") 1x, url("../img/background/advantages-1.jpg") 1x, url("../img/background/advantages-1@2x.webp") 2x, url("../img/background/advantages-1@2x.jpg") 2x);
+  background-image: image-set("../img/background/advantages-1.webp" 1x, "../img/background/advantages-1.jpg" 1x, "../img/background/advantages-1@2x.webp" 2x, "../img/background/advantages-1@2x.jpg" 2x);
 }
 
 .advantages__wrapper {
@@ -1025,10 +1021,8 @@ button,
   width: 100%;
   height: auto;
   margin: 0;
-  padding: 0;
   overflow: visible;
   white-space: normal;
-  border: 0;
   clip: auto;
   -webkit-clip-path: inset(0);
   clip-path: inset(0);
@@ -1061,43 +1055,43 @@ button,
 }
 
 .catalog__item--astoria {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-1-1.webp") 1x, url("../img/catalog/cruise-1-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-1-1.webp" 1x, "../img/catalog/cruise-1-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-1-1.webp") 1x, url("../img/catalog/cruise-1-1.jpg") 1x, url("../img/catalog/cruise-1-1@2x.webp") 2x, url("../img/catalog/cruise-1-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-1-1.webp" 1x, "../img/catalog/cruise-1-1.jpg" 1x, "../img/catalog/cruise-1-1@2x.webp" 2x, "../img/catalog/cruise-1-1@2x.jpg" 2x);
 }
 
 .catalog__item--eline {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-2-1.webp") 1x, url("../img/catalog/cruise-2-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-2-1.webp" 1x, "../img/catalog/cruise-2-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-2-1.webp") 1x, url("../img/catalog/cruise-2-1.jpg") 1x, url("../img/catalog/cruise-2-1@2x.webp") 2x, url("../img/catalog/cruise-2-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-2-1.webp" 1x, "../img/catalog/cruise-2-1.jpg" 1x, "../img/catalog/cruise-2-1@2x.webp" 2x, "../img/catalog/cruise-2-1@2x.jpg" 2x);
 }
 
 .catalog__item--atlantis {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-3-1.webp") 1x, url("../img/catalog/cruise-3-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-3-1.webp" 1x, "../img/catalog/cruise-3-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-3-1.webp") 1x, url("../img/catalog/cruise-3-1.jpg") 1x, url("../img/catalog/cruise-3-1@2x.webp") 2x, url("../img/catalog/cruise-3-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-3-1.webp" 1x, "../img/catalog/cruise-3-1.jpg" 1x, "../img/catalog/cruise-3-1@2x.webp" 2x, "../img/catalog/cruise-3-1@2x.jpg" 2x);
 }
 
 .catalog__item--odissey {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-4-1.webp") 1x, url("../img/catalog/cruise-4-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-4-1.webp" 1x, "../img/catalog/cruise-4-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-4-1.webp") 1x, url("../img/catalog/cruise-4-1.jpg") 1x, url("../img/catalog/cruise-4-1@2x.webp") 2x, url("../img/catalog/cruise-4-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-4-1.webp" 1x, "../img/catalog/cruise-4-1.jpg" 1x, "../img/catalog/cruise-4-1@2x.webp" 2x, "../img/catalog/cruise-4-1@2x.jpg" 2x);
 }
 
 .catalog__item--olympia {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-5-1.webp") 1x, url("../img/catalog/cruise-5-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-5-1.webp" 1x, "../img/catalog/cruise-5-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-5-1.webp") 1x, url("../img/catalog/cruise-5-1.jpg") 1x, url("../img/catalog/cruise-5-1@2x.webp") 2x, url("../img/catalog/cruise-5-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-5-1.webp" 1x, "../img/catalog/cruise-5-1.jpg" 1x, "../img/catalog/cruise-5-1@2x.webp" 2x, "../img/catalog/cruise-5-1@2x.jpg" 2x);
 }
 
 .catalog__item--aurora {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-6-1.webp") 1x, url("../img/catalog/cruise-6-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-6-1.webp" 1x, "../img/catalog/cruise-6-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-6-1.webp") 1x, url("../img/catalog/cruise-6-1.jpg") 1x, url("../img/catalog/cruise-6-1@2x.webp") 2x, url("../img/catalog/cruise-6-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-6-1.webp" 1x, "../img/catalog/cruise-6-1.jpg" 1x, "../img/catalog/cruise-6-1@2x.webp" 2x, "../img/catalog/cruise-6-1@2x.jpg" 2x);
 }
 
 .catalog__item--leonor {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-7-1.webp") 1x, url("../img/catalog/cruise-7-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-7-1.webp" 1x, "../img/catalog/cruise-7-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-7-1.webp") 1x, url("../img/catalog/cruise-7-1.jpg") 1x, url("../img/catalog/cruise-7-1@2x.webp") 2x, url("../img/catalog/cruise-7-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-7-1.webp" 1x, "../img/catalog/cruise-7-1.jpg" 1x, "../img/catalog/cruise-7-1@2x.webp" 2x, "../img/catalog/cruise-7-1@2x.jpg" 2x);
 }
 
 .catalog__item--minion-1 {
-  background-image: -webkit-image-set(url("../img/catalog/cruise-8-1.webp") 1x, url("../img/catalog/cruise-8-1.jpg") 1x);
-  background-image: image-set("../img/catalog/cruise-8-1.webp" 1x, "../img/catalog/cruise-8-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/catalog/cruise-8-1.webp") 1x, url("../img/catalog/cruise-8-1.jpg") 1x, url("../img/catalog/cruise-8-1@2x.webp") 2x, url("../img/catalog/cruise-8-1@2x.jpg") 2x);
+  background-image: image-set("../img/catalog/cruise-8-1.webp" 1x, "../img/catalog/cruise-8-1.jpg" 1x, "../img/catalog/cruise-8-1@2x.webp" 2x, "../img/catalog/cruise-8-1@2x.jpg" 2x);
 }
 
 .catalog__item-info {
@@ -1186,8 +1180,8 @@ button,
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-image-set(url("../img/background/feedback-1.webp") 1x, url("../img/background/feedback-1.jpg") 1x);
-  background-image: image-set("../img/background/feedback-1.webp" 1x, "../img/background/feedback-1.jpg" 1x);
+  background-image: -webkit-image-set(url("../img/background/feedback-1.webp") 1x, url("../img/background/feedback-1.jpg") 1x, url("../img/background/feedback-1@2x.webp") 2x, url("../img/background/feedback-1@2x.jpg") 2x);
+  background-image: image-set("../img/background/feedback-1.webp" 1x, "../img/background/feedback-1.jpg" 1x, "../img/background/feedback-1@2x.webp" 2x, "../img/background/feedback-1@2x.jpg" 2x);
 }
 
 .feedback .is-invalid {
@@ -1715,8 +1709,8 @@ input[type=checkbox]:invalid:focus + span::before {
   .header {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background-image: -webkit-image-set(url("../img/background/header-2.webp") 1x, url("../img/background/header-2.jpg") 1x);
-    background-image: image-set("../img/background/header-2.webp" 1x, "../img/background/header-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/background/header-2.webp") 1x, url("../img/background/header-2.jpg") 1x, url("../img/background/header-2@2x.webp") 2x, url("../img/background/header-2@2x.jpg") 2x);
+    background-image: image-set("../img/background/header-2.webp" 1x, "../img/background/header-2.jpg" 1x, "../img/background/header-2@2x.webp" 2x, "../img/background/header-2@2x.jpg" 2x);
   }
 
   .header__wrapper {
@@ -1785,8 +1779,8 @@ input[type=checkbox]:invalid:focus + span::before {
   }
 
   .advantages {
-    background-image: -webkit-image-set(url("../img/background/advantages-2.webp") 1x, url("../img/background/advantages-2.jpg") 1x);
-    background-image: image-set("../img/background/advantages-2.webp" 1x, "../img/background/advantages-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/background/advantages-2.webp") 1x, url("../img/background/advantages-2.jpg") 1x, url("../img/background/advantages-2@2x.webp") 2x, url("../img/background/advantages-2@2x.jpg") 2x);
+    background-image: image-set("../img/background/advantages-2.webp" 1x, "../img/background/advantages-2.jpg" 1x, "../img/background/advantages-2@2x.webp" 2x, "../img/background/advantages-2@2x.jpg" 2x);
   }
 
   .advantages__wrapper {
@@ -1856,48 +1850,48 @@ input[type=checkbox]:invalid:focus + span::before {
   }
 
   .catalog__item--astoria {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-1-2.webp") 1x, url("../img/catalog/cruise-1-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-1-2.webp" 1x, "../img/catalog/cruise-1-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-1-2.webp") 1x, url("../img/catalog/cruise-1-2.jpg") 1x, url("../img/catalog/cruise-1-2@2x.webp") 2x, url("../img/catalog/cruise-1-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-1-2.webp" 1x, "../img/catalog/cruise-1-2.jpg" 1x, "../img/catalog/cruise-1-2@2x.webp" 2x, "../img/catalog/cruise-1-2@2x.jpg" 2x);
   }
 
   .catalog__item--eline {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-2-2.webp") 1x, url("../img/catalog/cruise-2-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-2-2.webp" 1x, "../img/catalog/cruise-2-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-2-2.webp") 1x, url("../img/catalog/cruise-2-2.jpg") 1x, url("../img/catalog/cruise-2-2@2x.webp") 2x, url("../img/catalog/cruise-2-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-2-2.webp" 1x, "../img/catalog/cruise-2-2.jpg" 1x, "../img/catalog/cruise-2-2@2x.webp" 2x, "../img/catalog/cruise-2-2@2x.jpg" 2x);
   }
 
   .catalog__item--atlantis {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-3-2.webp") 1x, url("../img/catalog/cruise-3-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-3-2.webp" 1x, "../img/catalog/cruise-3-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-3-2.webp") 1x, url("../img/catalog/cruise-3-2.jpg") 1x, url("../img/catalog/cruise-3-2@2x.webp") 2x, url("../img/catalog/cruise-3-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-3-2.webp" 1x, "../img/catalog/cruise-3-2.jpg" 1x, "../img/catalog/cruise-3-2@2x.webp" 2x, "../img/catalog/cruise-3-2@2x.jpg" 2x);
   }
 
   .catalog__item--odissey {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-4-2.webp") 1x, url("../img/catalog/cruise-4-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-4-2.webp" 1x, "../img/catalog/cruise-4-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-4-2.webp") 1x, url("../img/catalog/cruise-4-2.jpg") 1x, url("../img/catalog/cruise-4-2@2x.webp") 2x, url("../img/catalog/cruise-4-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-4-2.webp" 1x, "../img/catalog/cruise-4-2.jpg" 1x, "../img/catalog/cruise-4-2@2x.webp" 2x, "../img/catalog/cruise-4-2@2x.jpg" 2x);
   }
 
   .catalog__item--olympia {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-5-2.webp") 1x, url("../img/catalog/cruise-5-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-5-2.webp" 1x, "../img/catalog/cruise-5-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-5-2.webp") 1x, url("../img/catalog/cruise-5-2.jpg") 1x, url("../img/catalog/cruise-5-2@2x.webp") 2x, url("../img/catalog/cruise-5-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-5-2.webp" 1x, "../img/catalog/cruise-5-2.jpg" 1x, "../img/catalog/cruise-5-2@2x.webp" 2x, "../img/catalog/cruise-5-2@2x.jpg" 2x);
   }
 
   .catalog__item--aurora {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-6-2.webp") 1x, url("../img/catalog/cruise-6-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-6-2.webp" 1x, "../img/catalog/cruise-6-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-6-2.webp") 1x, url("../img/catalog/cruise-6-2.jpg") 1x, url("../img/catalog/cruise-6-2@2x.webp") 2x, url("../img/catalog/cruise-6-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-6-2.webp" 1x, "../img/catalog/cruise-6-2.jpg" 1x, "../img/catalog/cruise-6-2@2x.webp" 2x, "../img/catalog/cruise-6-2@2x.jpg" 2x);
   }
 
   .catalog__item--leonor {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-7-2.webp") 1x, url("../img/catalog/cruise-7-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-7-2.webp" 1x, "../img/catalog/cruise-7-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-7-2.webp") 1x, url("../img/catalog/cruise-7-2.jpg") 1x, url("../img/catalog/cruise-7-2@2x.webp") 2x, url("../img/catalog/cruise-7-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-7-2.webp" 1x, "../img/catalog/cruise-7-2.jpg" 1x, "../img/catalog/cruise-7-2@2x.webp" 2x, "../img/catalog/cruise-7-2@2x.jpg" 2x);
   }
 
   .catalog__item--minion-1 {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-8-2.webp") 1x, url("../img/catalog/cruise-8-2.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-8-2.webp" 1x, "../img/catalog/cruise-8-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-8-2.webp") 1x, url("../img/catalog/cruise-8-2.jpg") 1x, url("../img/catalog/cruise-8-2@2x.webp") 2x, url("../img/catalog/cruise-8-2@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-8-2.webp" 1x, "../img/catalog/cruise-8-2.jpg" 1x, "../img/catalog/cruise-8-2@2x.webp" 2x, "../img/catalog/cruise-8-2@2x.jpg" 2x);
   }
 
   .feedback {
-    background-image: -webkit-image-set(url("../img/background/feedback-2.webp") 1x, url("../img/background/feedback-2.jpg") 1x);
-    background-image: image-set("../img/background/feedback-2.webp" 1x, "../img/background/feedback-2.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/background/feedback-2.webp") 1x, url("../img/background/feedback-2.jpg") 1x, url("../img/background/feedback-2@2x.webp") 2x, url("../img/background/feedback-2@2x.jpg") 2x);
+    background-image: image-set("../img/background/feedback-2.webp" 1x, "../img/background/feedback-2.jpg" 1x, "../img/background/feedback-2@2x.webp" 2x, "../img/background/feedback-2@2x.jpg" 2x);
   }
 
   .feedback__wrapper {
@@ -1999,68 +1993,11 @@ input[type=checkbox]:invalid:focus + span::before {
   }
 }
 
-@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .header {
-    background-image: -webkit-image-set(url("../img/background/header-2@2x.webp") 2x, url("../img/background/header-2@2x.jpg") 2x);
-    background-image: image-set("../img/background/header-2@2x.webp" 2x, "../img/background/header-2@2x.jpg" 2x);
-  }
-
-  .advantages {
-    background-image: -webkit-image-set(url("../img/background/advantages-2@2x.webp") 2x, url("../img/background/advantages-2@2x.jpg") 2x);
-    background-image: image-set("../img/background/advantages-2@2x.webp" 2x, "../img/background/advantages-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--astoria {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-1-2@2x.webp") 2x, url("../img/catalog/cruise-1-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-1-2@2x.webp" 2x, "../img/catalog/cruise-1-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--eline {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-2-2@2x.webp") 2x, url("../img/catalog/cruise-2-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-2-2@2x.webp" 2x, "../img/catalog/cruise-2-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--atlantis {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-3-2@2x.webp") 2x, url("../img/catalog/cruise-3-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-3-2@2x.webp" 2x, "../img/catalog/cruise-3-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--odissey {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-4-2@2x.webp") 2x, url("../img/catalog/cruise-4-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-4-2@2x.webp" 2x, "../img/catalog/cruise-4-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--olympia {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-5-2@2x.webp") 2x, url("../img/catalog/cruise-5-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-5-2@2x.webp" 2x, "../img/catalog/cruise-5-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--aurora {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-6-2@2x.webp") 2x, url("../img/catalog/cruise-6-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-6-2@2x.webp" 2x, "../img/catalog/cruise-6-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--leonor {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-7-2@2x.webp") 2x, url("../img/catalog/cruise-7-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-7-2@2x.webp" 2x, "../img/catalog/cruise-7-2@2x.jpg" 2x);
-  }
-
-  .catalog__item--minion-1 {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-8-2@2x.webp") 2x, url("../img/catalog/cruise-8-2@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-8-2@2x.webp" 2x, "../img/catalog/cruise-8-2@2x.jpg" 2x);
-  }
-
-  .feedback {
-    background-image: -webkit-image-set(url("../img/background/feedback-2@2x.webp") 2x, url("../img/background/feedback-2@2x.jpg") 2x);
-    background-image: image-set("../img/background/feedback-2@2x.webp" 2x, "../img/background/feedback-2@2x.jpg" 2x);
-  }
-}
-
 @media (max-width: 767px) {
   .header {
     min-height: 500px;
-    background-image: -webkit-image-set(url("../img/background/header-3.webp") 1x, url("../img/background/header-3.jpg") 1x);
-    background-image: image-set("../img/background/header-3.webp" 1x, "../img/background/header-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/background/header-3.webp") 1x, url("../img/background/header-3.jpg") 1x, url("../img/background/header-3@2x.webp") 2x, url("../img/background/header-3@2x.jpg") 2x);
+    background-image: image-set("../img/background/header-3.webp" 1x, "../img/background/header-3.jpg" 1x, "../img/background/header-3@2x.webp" 2x, "../img/background/header-3@2x.jpg" 2x);
   }
 
   .header__wrapper {
@@ -2260,6 +2197,10 @@ input[type=checkbox]:invalid:focus + span::before {
     color: #011c40;
   }
 
+  [data-header].is-open a:hover {
+    color: #78bcfc;
+  }
+
   [data-header].is-open .header__promo {
     position: absolute;
     width: 1px;
@@ -2293,8 +2234,8 @@ input[type=checkbox]:invalid:focus + span::before {
   }
 
   .advantages {
-    background-image: -webkit-image-set(url("../img/background/advantages-3.webp") 1x, url("../img/background/advantages-3.jpg") 1x);
-    background-image: image-set("../img/background/advantages-3.webp" 1x, "../img/background/advantages-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/background/advantages-3.webp") 1x, url("../img/background/advantages-3.jpg") 1x, url("../img/background/advantages-3@2x.webp") 2x, url("../img/background/advantages-3@2x.jpg") 2x);
+    background-image: image-set("../img/background/advantages-3.webp" 1x, "../img/background/advantages-3.jpg" 1x, "../img/background/advantages-3@2x.webp" 2x, "../img/background/advantages-3@2x.jpg" 2x);
   }
 
   .advantages__wrapper {
@@ -2348,48 +2289,48 @@ input[type=checkbox]:invalid:focus + span::before {
   }
 
   .catalog__item--astoria {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-1-3.webp") 1x, url("../img/catalog/cruise-1-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-1-3.webp" 1x, "../img/catalog/cruise-1-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-1-3.webp") 1x, url("../img/catalog/cruise-1-3.jpg") 1x, url("../img/catalog/cruise-1-3@2x.webp") 2x, url("../img/catalog/cruise-1-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-1-3.webp" 1x, "../img/catalog/cruise-1-3.jpg" 1x, "../img/catalog/cruise-1-3@2x.webp" 2x, "../img/catalog/cruise-1-3@2x.jpg" 2x);
   }
 
   .catalog__item--eline {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-2-3.webp") 1x, url("../img/catalog/cruise-2-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-2-3.webp" 1x, "../img/catalog/cruise-2-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-2-3.webp") 1x, url("../img/catalog/cruise-2-3.jpg") 1x, url("../img/catalog/cruise-2-3@2x.webp") 2x, url("../img/catalog/cruise-2-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-2-3.webp" 1x, "../img/catalog/cruise-2-3.jpg" 1x, "../img/catalog/cruise-2-3@2x.webp" 2x, "../img/catalog/cruise-2-3@2x.jpg" 2x);
   }
 
   .catalog__item--atlantis {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-3-3.webp") 1x, url("../img/catalog/cruise-3-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-3-3.webp" 1x, "../img/catalog/cruise-3-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-3-3.webp") 1x, url("../img/catalog/cruise-3-3.jpg") 1x, url("../img/catalog/cruise-3-3@2x.webp") 2x, url("../img/catalog/cruise-3-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-3-3.webp" 1x, "../img/catalog/cruise-3-3.jpg" 1x, "../img/catalog/cruise-3-3@2x.webp" 2x, "../img/catalog/cruise-3-3@2x.jpg" 2x);
   }
 
   .catalog__item--odissey {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-4-3.webp") 1x, url("../img/catalog/cruise-4-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-4-3.webp" 1x, "../img/catalog/cruise-4-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-4-3.webp") 1x, url("../img/catalog/cruise-4-3.jpg") 1x, url("../img/catalog/cruise-4-3@2x.webp") 2x, url("../img/catalog/cruise-4-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-4-3.webp" 1x, "../img/catalog/cruise-4-3.jpg" 1x, "../img/catalog/cruise-4-3@2x.webp" 2x, "../img/catalog/cruise-4-3@2x.jpg" 2x);
   }
 
   .catalog__item--olympia {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-5-3.webp") 1x, url("../img/catalog/cruise-5-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-5-3.webp" 1x, "../img/catalog/cruise-5-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-5-3.webp") 1x, url("../img/catalog/cruise-5-3.jpg") 1x, url("../img/catalog/cruise-5-3@2x.webp") 2x, url("../img/catalog/cruise-5-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-5-3.webp" 1x, "../img/catalog/cruise-5-3.jpg" 1x, "../img/catalog/cruise-5-3@2x.webp" 2x, "../img/catalog/cruise-5-3@2x.jpg" 2x);
   }
 
   .catalog__item--aurora {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-6-3.webp") 1x, url("../img/catalog/cruise-6-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-6-3.webp" 1x, "../img/catalog/cruise-6-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-6-3.webp") 1x, url("../img/catalog/cruise-6-3.jpg") 1x, url("../img/catalog/cruise-6-3@2x.webp") 2x, url("../img/catalog/cruise-6-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-6-3.webp" 1x, "../img/catalog/cruise-6-3.jpg" 1x, "../img/catalog/cruise-6-3@2x.webp" 2x, "../img/catalog/cruise-6-3@2x.jpg" 2x);
   }
 
   .catalog__item--leonor {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-7-3.webp") 1x, url("../img/catalog/cruise-7-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-7-3.webp" 1x, "../img/catalog/cruise-7-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-7-3.webp") 1x, url("../img/catalog/cruise-7-3.jpg") 1x, url("../img/catalog/cruise-7-3@2x.webp") 2x, url("../img/catalog/cruise-7-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-7-3.webp" 1x, "../img/catalog/cruise-7-3.jpg" 1x, "../img/catalog/cruise-7-3@2x.webp" 2x, "../img/catalog/cruise-7-3@2x.jpg" 2x);
   }
 
   .catalog__item--minion-1 {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-8-3.webp") 1x, url("../img/catalog/cruise-8-3.jpg") 1x);
-    background-image: image-set("../img/catalog/cruise-8-3.webp" 1x, "../img/catalog/cruise-8-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/catalog/cruise-8-3.webp") 1x, url("../img/catalog/cruise-8-3.jpg") 1x, url("../img/catalog/cruise-8-3@2x.webp") 2x, url("../img/catalog/cruise-8-3@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cruise-8-3.webp" 1x, "../img/catalog/cruise-8-3.jpg" 1x, "../img/catalog/cruise-8-3@2x.webp" 2x, "../img/catalog/cruise-8-3@2x.jpg" 2x);
   }
 
   .feedback {
-    background-image: -webkit-image-set(url("../img/background/feedback-3.webp") 1x, url("../img/background/feedback-3.jpg") 1x);
-    background-image: image-set("../img/background/feedback-3.webp" 1x, "../img/background/feedback-3.jpg" 1x);
+    background-image: -webkit-image-set(url("../img/background/feedback-3.webp") 1x, url("../img/background/feedback-3.jpg") 1x, url("../img/background/feedback-3@2x.webp") 2x, url("../img/background/feedback-3@2x.jpg") 2x);
+    background-image: image-set("../img/background/feedback-3.webp" 1x, "../img/background/feedback-3.jpg" 1x, "../img/background/feedback-3@2x.webp" 2x, "../img/background/feedback-3@2x.jpg" 2x);
   }
 
   .feedback button {
@@ -2541,70 +2482,22 @@ input[type=checkbox]:invalid:focus + span::before {
     justify-content: center;
   }
 
+  .footer__list-item {
+    width: 100%;
+  }
+
   .footer__list-item a {
     padding: 9px 7px 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .footer__list-item--social {
     width: auto;
-  }
-}
-
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .header {
-    background-image: -webkit-image-set(url("../img/background/header-3@2x.webp") 2x, url("../img/background/header-3@2x.jpg") 2x);
-    background-image: image-set("../img/background/header-3@2x.webp" 2x, "../img/background/header-3@2x.jpg" 2x);
-  }
-
-  .advantages {
-    background-image: -webkit-image-set(url("../img/background/advantages-3@2x.webp") 2x, url("../img/background/advantages-3@2x.jpg") 2x);
-    background-image: image-set("../img/background/advantages-3@2x.webp" 2x, "../img/background/advantages-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--astoria {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-1-3@2x.webp") 2x, url("../img/catalog/cruise-1-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-1-3@2x.webp" 2x, "../img/catalog/cruise-1-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--eline {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-2-3@2x.webp") 2x, url("../img/catalog/cruise-2-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-2-3@2x.webp" 2x, "../img/catalog/cruise-2-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--atlantis {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-3-3@2x.webp") 2x, url("../img/catalog/cruise-3-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-3-3@2x.webp" 2x, "../img/catalog/cruise-3-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--odissey {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-4-3@2x.webp") 2x, url("../img/catalog/cruise-4-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-4-3@2x.webp" 2x, "../img/catalog/cruise-4-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--olympia {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-5-3@2x.webp") 2x, url("../img/catalog/cruise-5-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-5-3@2x.webp" 2x, "../img/catalog/cruise-5-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--aurora {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-6-3@2x.webp") 2x, url("../img/catalog/cruise-6-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-6-3@2x.webp" 2x, "../img/catalog/cruise-6-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--leonor {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-7-3@2x.webp") 2x, url("../img/catalog/cruise-7-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-7-3@2x.webp" 2x, "../img/catalog/cruise-7-3@2x.jpg" 2x);
-  }
-
-  .catalog__item--minion-1 {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-8-3@2x.webp") 2x, url("../img/catalog/cruise-8-3@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-8-3@2x.webp" 2x, "../img/catalog/cruise-8-3@2x.jpg" 2x);
-  }
-
-  .feedback {
-    background-image: -webkit-image-set(url("../img/background/feedback-3@2x.webp") 2x, url("../img/background/feedback-3@2x.jpg") 2x);
-    background-image: image-set("../img/background/feedback-3@2x.webp" 2x, "../img/background/feedback-3@2x.jpg" 2x);
   }
 }
 
@@ -2634,73 +2527,12 @@ input[type=checkbox]:invalid:focus + span::before {
   }
 
   .footer__list-item a {
-    text-align: left;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .footer__list-item--social a {
     margin: 4px 4px 0 0;
-  }
-}
-
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .header {
-    background-image: -webkit-image-set(url("../img/background/header-1@2x.webp") 2x, url("../img/background/header-1@2x.jpg") 2x);
-    background-image: image-set("../img/background/header-1@2x.webp" 2x, "../img/background/header-1@2x.jpg" 2x);
-  }
-
-  .advantages {
-    background-image: -webkit-image-set(url("../img/background/advantages-1@2x.webp") 2x, url("../img/background/advantages-1@2x.jpg") 2x);
-    background-image: image-set("../img/background/advantages-1@2x.webp" 2x, "../img/background/advantages-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--astoria {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-1-1@2x.webp") 2x, url("../img/catalog/cruise-1-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-1-1@2x.webp" 2x, "../img/catalog/cruise-1-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--eline {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-2-1@2x.webp") 2x, url("../img/catalog/cruise-2-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-2-1@2x.webp" 2x, "../img/catalog/cruise-2-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--atlantis {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-3-1@2x.webp") 2x, url("../img/catalog/cruise-3-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-3-1@2x.webp" 2x, "../img/catalog/cruise-3-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--odissey {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-4-1@2x.webp") 2x, url("../img/catalog/cruise-4-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-4-1@2x.webp" 2x, "../img/catalog/cruise-4-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--olympia {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-5-1@2x.webp") 2x, url("../img/catalog/cruise-5-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-5-1@2x.webp" 2x, "../img/catalog/cruise-5-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--aurora {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-6-1@2x.webp") 2x, url("../img/catalog/cruise-6-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-6-1@2x.webp" 2x, "../img/catalog/cruise-6-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--leonor {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-7-1@2x.webp") 2x, url("../img/catalog/cruise-7-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-7-1@2x.webp" 2x, "../img/catalog/cruise-7-1@2x.jpg" 2x);
-  }
-
-  .catalog__item--minion-1 {
-    background-image: -webkit-image-set(url("../img/catalog/cruise-8-1@2x.webp") 2x, url("../img/catalog/cruise-8-1@2x.jpg") 2x);
-    background-image: image-set("../img/catalog/cruise-8-1@2x.webp" 2x, "../img/catalog/cruise-8-1@2x.jpg" 2x);
-  }
-
-  .feedback {
-    background-image: -webkit-image-set(url("../img/background/feedback-1@2x.webp") 2x, url("../img/background/feedback-1@2x.jpg") 2x);
-    background-image: image-set("../img/background/feedback-1@2x.webp" 2x, "../img/background/feedback-1@2x.jpg" 2x);
   }
 }
