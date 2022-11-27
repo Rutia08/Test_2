@@ -1,4 +1,4 @@
 Круизы в Антарктику (второй проект акселератор)
 
-# https://rutia08.github.io/antarctic-cruises/
+https://rutia08.github.io/antarctic-cruises/
 ------------------------------------------------
