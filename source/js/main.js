@@ -87,13 +87,13 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     if (inputPhone.value[0] === '+') {
-      if (inputPhone.value.length < 12) {
+      if (inputPhone.value.length < 2) {
         inputPhone.classList.add('is-invalid');
       } else {
         inputPhone.classList.remove('is-invalid');
       }
     } else {
-      if (inputPhone.value.length < 11) {
+      if (inputPhone.value.length < 1) {
         inputPhone.classList.add('is-invalid');
       } else {
         inputPhone.classList.remove('is-invalid');
